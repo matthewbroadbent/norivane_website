@@ -501,7 +501,7 @@ const Contact = () => {
               </button>
               
               <a
-                href="tel:+44-123-456-7890"
+                href="tel:+44-7736-105055"
                 className="text-white hover:text-teal border-b-2 border-transparent hover:border-teal font-semibold text-lg transition-all duration-300"
               >
                 Or call us directly
