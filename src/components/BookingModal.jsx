@@ -91,7 +91,7 @@ const BookingModal = ({ isOpen, onClose, consultationType = 'General Consultatio
             animate="visible"
             exit="exit"
             transition={{ type: "spring", damping: 25, stiffness: 300 }}
-            className="bg-white rounded-2xl p-8 max-w-4xl w-full max-h-[90vh] overflow-y-auto"
+            className="bg-white rounded-2xl p-4 sm:p-8 max-w-4xl w-full max-h-[90vh] overflow-y-auto"
             onClick={(e) => e.stopPropagation()}
           >
             {/* Header */}
@@ -115,12 +115,12 @@ const BookingModal = ({ isOpen, onClose, consultationType = 'General Consultatio
                   <h3 className="text-lg font-semibold text-dark-blue mb-4">
                     Choose Your Preferred Time
                   </h3>
-                  <div className="border rounded-lg overflow-hidden">
-                    <iframe 
-                      src="https://calendar.google.com/calendar/appointments/schedules/AcZssZ1dDhVTC6nmAqTpQ744WdiVX5HYpBpJuieMFd2Bsk7-iFlARlw8EuBzT7ulHmXKp3ja2DPIdPsS?gv=true" 
-                      style={{ border: 0 }} 
-                      width="100%" 
-                      height="600" 
+                  <div className="border rounded-lg overflow-hidden" style={{ height: 'min(500px, 60vh)' }}>
+                    <iframe
+                      src="https://calendar.google.com/calendar/appointments/schedules/AcZssZ1dDhVTC6nmAqTpQ744WdiVX5HYpBpJuieMFd2Bsk7-iFlARlw8EuBzT7ulHmXKp3ja2DPIdPsS?gv=true"
+                      style={{ border: 0 }}
+                      width="100%"
+                      height="100%"
                       frameBorder="0"
                       title="Norivane Appointment Scheduler"
                     ></iframe>

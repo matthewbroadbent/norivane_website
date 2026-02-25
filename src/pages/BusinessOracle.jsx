@@ -133,6 +133,7 @@ const BusinessOracle = () => {
                 src="/images/business-oracle-network.jpeg"
                 alt="Business Oracle knowledge network map"
                 className="rounded-2xl shadow-xl w-full h-auto"
+                loading="lazy"
               />
             </motion.div>
           </div>
@@ -190,6 +191,7 @@ const BusinessOracle = () => {
                 src="/images/business-oracle-portrait.jpg"
                 alt="Norivane team - Business Oracle advisors"
                 className="rounded-2xl shadow-xl w-full h-auto"
+                loading="lazy"
               />
             </motion.div>
 
@@ -224,7 +226,7 @@ const BusinessOracle = () => {
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true }}
           >
-            <h2 className="text-4xl md:text-5xl font-bold mb-8">
+            <h2 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-bold mb-8">
               Find out what a Business Oracle could look like for your business
             </h2>
 
