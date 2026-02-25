@@ -1,2 +1,22 @@
 node_modules/
 Icon?
+
+# Environment files - never commit these
+.env
+.env.local
+.env.*.local
+.env.development
+.env.production
+.env.staging
+
+# Build output
+dist/
+dist-ssr/
+
+# Editor/OS
+.DS_Store
+*.suo
+*.ntvs*
+*.njsproj
+*.sln
+*.sw?
