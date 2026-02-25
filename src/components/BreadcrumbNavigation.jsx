@@ -52,6 +52,7 @@ const BreadcrumbNavigation = ({ customBreadcrumbs = null }) => {
   const breadcrumbMap = {
     'ai': 'AI Solutions',
     'exit': 'Exit Planning',
+    'business-oracle': 'Business Oracle',
     'blog': 'Blog',
     'contact': 'Contact',
     'admin': 'Admin'

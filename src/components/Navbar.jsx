@@ -28,7 +28,7 @@ const Navbar = () => {
   const navItems = [
     { name: 'AI Solutions', path: '/ai' },
     { name: 'Exit Planning', path: '/exit' },
-    { name: 'Free Assessment', path: '/assessment' }, // [NEW]
+    { name: 'Business Oracle', path: '/business-oracle' },
     { name: 'Contact', path: '/contact' }
   ]
 
