@@ -187,7 +187,7 @@ const BusinessOracle = () => {
               viewport={{ once: true }}
             >
               <img
-                src="/images/business-oracle-portrait.png"
+                src="/images/business-oracle-portrait.jpg"
                 alt="Norivane team - Business Oracle advisors"
                 className="rounded-2xl shadow-xl w-full h-auto"
               />
