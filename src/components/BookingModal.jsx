@@ -219,7 +219,7 @@ const BookingModal = ({ isOpen, onClose, consultationType = 'General Consultatio
                           value={formData.phone}
                           onChange={handleChange}
                           className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-teal focus:border-transparent"
-                          placeholder="+44 7356 224125"
+                          placeholder="+44 7736 105055"
                         />
                       </div>
 

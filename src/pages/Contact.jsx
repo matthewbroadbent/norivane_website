@@ -73,9 +73,9 @@ const Contact = () => {
     {
       icon: <Phone size={24} />,
       title: "Phone",
-      details: "+44 (0) 7356 224 125",
+      details: "+44 (0) 7736 105 055",
       description: "Mon-Fri, 9am-6pm GMT",
-      action: "tel:+44-7356-224125"
+      action: "tel:+44-7736-105055"
     },
     {
       icon: <Mail size={24} />,
