@@ -61,7 +61,7 @@ const Footer = () => {
 
         <div className="border-t border-gray-700 mt-8 pt-8 text-center">
           <p className="text-gray-300">
-            © 2025 Norivane. All rights reserved. | 
+            © 2026 Norivane. All rights reserved. | 
             <Link to="/privacy" className="text-teal hover:underline ml-1">Privacy Policy</Link> | 
             <Link to="/terms" className="text-teal hover:underline ml-1">Terms of Service</Link>
           </p>
