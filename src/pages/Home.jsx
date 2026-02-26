@@ -25,7 +25,7 @@ const Home = () => {
       <section className="relative min-h-screen flex items-center justify-center pt-16 bg-dark-blue">
         <div className="absolute inset-0 bg-dark-blue" />
 
-        <div className="relative z-10 max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center text-white">
+        <div className="relative max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center text-white">
           <motion.div
             initial={{ opacity: 0, y: 30 }}
             animate={{ opacity: 1, y: 0 }}
