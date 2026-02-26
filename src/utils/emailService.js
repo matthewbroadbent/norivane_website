@@ -54,20 +54,20 @@ export const sendContactMessage = async (formData) => {
   // Access environment variables using import.meta.env
   const serviceId = import.meta.env.VITE_EMAILJS_SERVICE_ID;
   const templateId = import.meta.env.VITE_EMAILJS_TEMPLATE_ID;
-  const publicKey = import.meta.env.VITE_EMAILJS_PUBLIC_KEY; // Explicitly pass it for clarity in send function
+  const publicKey = import.meta.env.VITE_EMAILJS_PUBLIC_KEY;
 
   try {
     const templateParams = {
-      from_name: formData.name,
-      from_email: formData.email,
-      company: formData.company || 'Not specified',
-      phone: formData.phone || 'Not provided',
-      interest: formData.interest,
+      name: formData.name,
+      email: formData.email,
+      company: formData.company || '',
+      phone: formData.phone || '',
+      interest: formData.interest || '',
+      revenue: '',
       message: formData.message,
-      subject: formData.subject || 'Contact Form Inquiry',
-      consultation_type: 'Contact Form Inquiry',
-      to_name: 'Norivane Team',
-      reply_to: formData.email
+      booking_date: '',
+      booking_time: '',
+      form_type: 'Contact Form',
     };
 
     // Use the imported emailjs, and pass the public key
