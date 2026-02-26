@@ -1,7 +1,6 @@
 import React, { useState, useEffect } from 'react'
 import { Link, useLocation } from 'react-router-dom'
 import { Menu, X } from 'lucide-react'
-import { motion, AnimatePresence } from 'framer-motion'
 import Logo from './Logo'
 
 const Navbar = () => {
@@ -89,43 +88,37 @@ const Navbar = () => {
         </div>
 
         {/* Mobile Navigation */}
-        <AnimatePresence>
-          {isOpen && (
-            <motion.div
-              initial={{ opacity: 0, height: 0 }}
-              animate={{ opacity: 1, height: 'auto' }}
-              exit={{ opacity: 0, height: 0 }}
-              transition={{ duration: 0.25 }}
-              className="md:hidden bg-white border-t border-gray-200 shadow-lg"
-            >
-              <div className="px-2 pt-2 pb-4 space-y-1">
-                {navItems.map((item) => (
-                  <Link
-                    key={item.name}
-                    to={item.path}
-                    className={`block px-3 py-2 rounded-md text-base font-medium transition-colors duration-200 ${
-                      location.pathname === item.path
-                        ? 'text-teal bg-teal/10'
-                        : 'text-dark-blue hover:text-teal hover:bg-gray-50'
-                    }`}
-                  >
-                    {item.name}
-                  </Link>
-                ))}
-                <div className="pt-2">
-                  <a
-                    href="https://score.norivane.com/free"
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    className="block w-full text-center px-3 py-3 bg-teal text-white rounded-full font-semibold text-sm hover:bg-teal/90 transition-colors duration-200"
-                  >
-                    Check Your Score
-                  </a>
-                </div>
-              </div>
-            </motion.div>
-          )}
-        </AnimatePresence>
+        <div
+          className={`md:hidden bg-white border-t border-gray-200 shadow-lg overflow-hidden transition-all duration-300 ease-in-out ${
+            isOpen ? 'max-h-96 opacity-100' : 'max-h-0 opacity-0'
+          }`}
+        >
+          <div className="px-2 pt-2 pb-4 space-y-1">
+            {navItems.map((item) => (
+              <Link
+                key={item.name}
+                to={item.path}
+                className={`block px-3 py-2 rounded-md text-base font-medium transition-colors duration-200 ${
+                  location.pathname === item.path
+                    ? 'text-teal bg-teal/10'
+                    : 'text-dark-blue hover:text-teal hover:bg-gray-50'
+                }`}
+              >
+                {item.name}
+              </Link>
+            ))}
+            <div className="pt-2">
+              <a
+                href="https://score.norivane.com/free"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="block w-full text-center px-3 py-3 bg-teal text-white rounded-full font-semibold text-sm hover:bg-teal/90 transition-colors duration-200"
+              >
+                Check Your Score
+              </a>
+            </div>
+          </div>
+        </div>
       </div>
     </nav>
   )
