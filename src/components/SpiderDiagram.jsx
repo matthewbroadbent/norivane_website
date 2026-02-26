@@ -1,4 +1,4 @@
-import React, { useState } from 'react'
+import React, { useState, useEffect, useRef } from 'react'
 import { motion, AnimatePresence } from 'framer-motion'
 
 const AXES = [
@@ -79,6 +79,20 @@ const LABEL_ALIGN = [
 const SpiderDiagram = () => {
   const [active, setActive] = useState(null)
   const activeData = active !== null ? AXES[active] : null
+  const [scale, setScale] = useState(1)
+  const outerRef = useRef(null)
+
+  useEffect(() => {
+    const update = () => {
+      if (outerRef.current) {
+        const available = outerRef.current.offsetWidth
+        setScale(Math.min(1, available / WRAP_W))
+      }
+    }
+    update()
+    window.addEventListener('resize', update)
+    return () => window.removeEventListener('resize', update)
+  }, [])
 
   const toggle = (i) => setActive(active === i ? null : i)
 
@@ -86,7 +100,14 @@ const SpiderDiagram = () => {
     <div className="flex flex-col lg:flex-row items-start gap-10 w-full">
 
       {/* ── Left: diagram wrapper ── */}
-      <div className="flex-shrink-0 w-full lg:w-auto">
+      <div ref={outerRef} className="flex-shrink-0 w-full lg:w-auto">
+        {/* Outer container sized to scaled dimensions */}
+        <div
+          className="relative mx-auto overflow-hidden"
+          style={{ width: WRAP_W * scale, height: WRAP_H * scale }}
+        >
+        {/* Inner content scaled down */}
+        <div style={{ transform: `scale(${scale})`, transformOrigin: 'top left', width: WRAP_W, height: WRAP_H, position: 'absolute', top: 0, left: 0 }}>
         {/* Relative container — labels are absolute children, SVG is absolute child */}
         <div
           className="relative mx-auto"
@@ -197,9 +218,11 @@ const SpiderDiagram = () => {
             )
           })}
         </div>
+        </div>
+        </div>
 
         {/* Click hint */}
-        <p className="text-center text-gray-500 text-xs mt-2" style={{ width: WRAP_W }}>
+        <p className="text-center text-gray-500 text-xs mt-2">
           Click a label or dot to explore what a buyer sees
         </p>
       </div>
