@@ -8,6 +8,7 @@ body {
   padding: 0;
   background-color: #ffffff;
   color: #212529;
+  overflow-x: hidden;
 }
 
 .gradient-bg {
