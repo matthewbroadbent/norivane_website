@@ -50,12 +50,13 @@ const BreadcrumbNavigation = ({ customBreadcrumbs = null }) => {
   if (pathnames.length === 0) return null
 
   const breadcrumbMap = {
-    'ai': 'AI Solutions',
-    'exit': 'Exit Planning',
+    'what-we-do': 'What We Do',
+    'diagnostic': 'The Diagnostic',
+    'exit-architecture': 'Exit Architecture',
     'business-oracle': 'Business Oracle',
-    'blog': 'Blog',
+    'about': 'About',
     'contact': 'Contact',
-    'admin': 'Admin'
+    'privacy': 'Privacy Policy',
   }
 
   return (
