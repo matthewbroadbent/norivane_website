@@ -109,6 +109,7 @@ const Home = () => {
             whileInView={{ opacity: 1 }}
             viewport={{ once: true }}
             transition={{ duration: 0.6, delay: 0.2 }}
+            className="overflow-x-auto"
           >
             <SpiderDiagram />
           </motion.div>
