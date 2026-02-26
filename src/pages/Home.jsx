@@ -4,6 +4,8 @@ import { motion } from 'framer-motion'
 import { ArrowRight, ChevronDown } from 'lucide-react'
 import SEOHelmet from '../components/SEOHelmet'
 import SpiderDiagram from '../components/SpiderDiagram'
+import { useScrollDepth } from '../hooks/useScrollDepth'
+import { trackScoreToolClick } from '../utils/analytics'
 
 const fadeInUp = {
   initial: { opacity: 0, y: 40 },
@@ -12,6 +14,8 @@ const fadeInUp = {
 }
 
 const Home = () => {
+  useScrollDepth()
+
   return (
     <div className="min-h-screen">
       <SEOHelmet
@@ -45,6 +49,7 @@ const Home = () => {
                 href="https://score.norivane.com/free"
                 target="_blank"
                 rel="noopener noreferrer"
+                onClick={() => trackScoreToolClick('home_hero')}
                 className="bg-teal hover:bg-teal/90 text-white px-8 py-4 rounded-full font-semibold text-lg transition-all duration-300 shadow-xl hover:shadow-2xl"
               >
                 Check Your Owner Dependence Score — Free
@@ -145,6 +150,7 @@ const Home = () => {
               href="https://score.norivane.com/free"
               target="_blank"
               rel="noopener noreferrer"
+              onClick={() => trackScoreToolClick('home_cta_section')}
               className="inline-flex items-center gap-2 bg-white text-teal px-8 py-4 rounded-full font-semibold text-lg hover:bg-gray-50 transition-all duration-300 shadow-xl"
             >
               <span>Check Your Owner Dependence Score — Free</span>
@@ -191,6 +197,7 @@ const Home = () => {
                 href="https://score.norivane.com/free"
                 target="_blank"
                 rel="noopener noreferrer"
+                onClick={() => trackScoreToolClick('home_product_ladder')}
                 className="inline-flex items-center gap-2 text-teal font-semibold text-sm hover:gap-3 transition-all duration-200"
               >
                 Start now <ArrowRight size={15} />
@@ -310,6 +317,7 @@ const Home = () => {
                 href="https://score.norivane.com/free"
                 target="_blank"
                 rel="noopener noreferrer"
+                onClick={() => trackScoreToolClick('home_final_cta')}
                 className="bg-teal hover:bg-teal/90 text-white px-8 py-4 rounded-full font-semibold text-lg transition-all duration-300 shadow-xl"
               >
                 Check Your Score Free

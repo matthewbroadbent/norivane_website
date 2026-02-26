@@ -2,6 +2,7 @@ import React, { useState, useEffect } from 'react'
 import { Link, useLocation } from 'react-router-dom'
 import { Menu, X } from 'lucide-react'
 import Logo from './Logo'
+import { trackScoreToolClick } from '../utils/analytics'
 
 const Navbar = () => {
   const [isOpen, setIsOpen] = useState(false)
@@ -70,6 +71,7 @@ const Navbar = () => {
               href="https://score.norivane.com/free"
               target="_blank"
               rel="noopener noreferrer"
+              onClick={() => trackScoreToolClick('navbar_desktop')}
               className="ml-2 px-5 py-2 rounded-full text-sm font-semibold bg-teal text-white hover:bg-teal/90 transition-all duration-200 shadow-sm hover:shadow-md"
             >
               Check Your Score
@@ -111,6 +113,7 @@ const Navbar = () => {
                 href="https://score.norivane.com/free"
                 target="_blank"
                 rel="noopener noreferrer"
+                onClick={() => trackScoreToolClick('navbar_mobile')}
                 className="block w-full text-center px-3 py-3 bg-teal text-white rounded-full font-semibold text-sm hover:bg-teal/90 transition-colors duration-200"
               >
                 Check Your Score

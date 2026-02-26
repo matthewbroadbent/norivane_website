@@ -1,6 +1,7 @@
 import React from 'react'
 import { Link } from 'react-router-dom'
 import { motion } from 'framer-motion'
+import { trackScoreToolClick } from '../utils/analytics'
 import { ArrowRight } from 'lucide-react'
 import SEOHelmet from '../components/SEOHelmet'
 import BreadcrumbNavigation from '../components/BreadcrumbNavigation'
@@ -202,6 +203,7 @@ const WhatWeDo = () => {
                 href="https://score.norivane.com/free"
                 target="_blank"
                 rel="noopener noreferrer"
+                onClick={() => trackScoreToolClick('what_we_do_page')}
                 className="bg-teal hover:bg-teal/90 text-white px-8 py-4 rounded-full font-semibold text-lg transition-all duration-300 shadow-xl"
               >
                 Check Your Score Free

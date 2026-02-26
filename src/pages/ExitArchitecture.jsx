@@ -1,4 +1,5 @@
-import React from 'react'
+import React, { useEffect } from 'react'
+import { trackEvent, trackScoreToolClick } from '../utils/analytics'
 import { Link } from 'react-router-dom'
 import { motion } from 'framer-motion'
 import { ArrowRight } from 'lucide-react'
@@ -40,6 +41,10 @@ const REGIMES = [
 
 const ExitArchitecture = () => {
   const breadcrumbs = [{ label: 'Exit Architecture', url: null }]
+
+  useEffect(() => {
+    trackEvent('exit_architecture_page_view', { event_category: 'page_interest' })
+  }, [])
 
   return (
     <div className="min-h-screen">
@@ -219,6 +224,7 @@ const ExitArchitecture = () => {
                 href="https://score.norivane.com/free"
                 target="_blank"
                 rel="noopener noreferrer"
+                onClick={() => trackScoreToolClick('exit_architecture_page')}
                 className="bg-teal hover:bg-teal/90 text-white px-8 py-4 rounded-full font-semibold text-lg transition-all duration-300 shadow-xl"
               >
                 Check Your Score Free

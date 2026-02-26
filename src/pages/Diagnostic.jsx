@@ -1,4 +1,5 @@
-import React from 'react'
+import React, { useEffect } from 'react'
+import { trackEvent, trackScoreToolClick } from '../utils/analytics'
 import { Link } from 'react-router-dom'
 import { motion } from 'framer-motion'
 import { ArrowRight, Check } from 'lucide-react'
@@ -13,6 +14,10 @@ const fadeInUp = {
 
 const Diagnostic = () => {
   const breadcrumbs = [{ label: 'The Diagnostic', url: null }]
+
+  useEffect(() => {
+    trackEvent('diagnostic_page_view', { event_category: 'page_interest' })
+  }, [])
 
   return (
     <div className="min-h-screen">
@@ -95,6 +100,7 @@ const Diagnostic = () => {
               href="https://score.norivane.com/free"
               target="_blank"
               rel="noopener noreferrer"
+              onClick={() => trackScoreToolClick('diagnostic_page')}
               className="inline-flex items-center gap-2 bg-teal text-white px-8 py-4 rounded-full font-semibold text-lg hover:bg-teal/90 transition-all duration-300 shadow-lg"
             >
               Start the Assessment <ArrowRight size={20} />

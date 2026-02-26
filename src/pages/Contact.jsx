@@ -1,4 +1,5 @@
 import React, { useState } from 'react'
+import { trackContactFormSubmit } from '../utils/analytics'
 import { motion } from 'framer-motion'
 import { Mail, Phone, MapPin, Send, CheckCircle } from 'lucide-react'
 import SEOHelmet from '../components/SEOHelmet'
@@ -34,6 +35,7 @@ const Contact = () => {
     try {
       const result = await sendContactForm(formData)
       if (result.success) {
+        trackContactFormSubmit(formData.interest)
         setFormStatus('success')
         setFormData({ name: '', email: '', company: '', message: '', interest: 'general' })
         setTimeout(() => setFormStatus(''), 5000)

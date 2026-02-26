@@ -1,6 +1,7 @@
 import React from 'react'
 import { Link } from 'react-router-dom'
 import { Mail, Phone, MapPin } from 'lucide-react'
+import { trackScoreToolClick } from '../utils/analytics'
 import Logo from './Logo'
 
 const Footer = () => {
@@ -32,6 +33,7 @@ const Footer = () => {
                   href="https://score.norivane.com/free"
                   target="_blank"
                   rel="noopener noreferrer"
+                  onClick={() => trackScoreToolClick('footer')}
                   className="text-gray-400 hover:text-teal transition-colors duration-200 text-sm"
                 >
                   Free Score Check
