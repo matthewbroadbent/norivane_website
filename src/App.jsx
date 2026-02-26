@@ -6,6 +6,7 @@ import Exit from './pages/Exit';
 import AI from './pages/AI';
 import Assessment from './pages/Assessment';
 import Contact from './pages/Contact';
+import Privacy from './pages/Privacy';
 import Sitemap from './pages/Sitemap';
 import BusinessOracle from './pages/BusinessOracle';
 import SitemapGenerator from './components/SitemapGenerator';
@@ -26,6 +27,7 @@ function App() {
             <Route path="/ai" element={<AI />} />
             <Route path="/assessment" element={<Assessment />} />
             <Route path="/contact" element={<Contact />} />
+            <Route path="/privacy" element={<Privacy />} />
             <Route path="/business-oracle" element={<BusinessOracle />} />
           </Route>
         </Routes>
