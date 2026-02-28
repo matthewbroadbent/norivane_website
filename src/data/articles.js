@@ -6,7 +6,10 @@ export const ARTICLES = [
     date: 'February 2026',
     lens: null,
     substackUrl: 'https://theunemployableadvisor.substack.com/p/your-business-is-worth-whatever-you',
-    heroImage: null, // { src: '...', alt: '...' }
+    heroImage: {
+      src: 'https://substackcdn.com/image/fetch/$s_!bTwt!,f_auto,q_auto:good,fl_progressive:steep/https%3A%2F%2Fsubstack-post-media.s3.amazonaws.com%2Fpublic%2Fimages%2F7b90878f-810b-44c7-8228-db9f82a7c9b5_2752x1536.heic',
+      alt: 'Business valuation — starting with your own balance sheet rather than market multiples',
+    },
     excerpt:
       'Most owners approach valuation from the wrong end — starting with a multiple and working backwards. The right starting point is your own balance sheet: what retirement costs, what you have, what the shortfall is.',
     sections: [
@@ -65,7 +68,10 @@ export const ARTICLES = [
     date: 'February 2026',
     lens: 'Owner Dependence',
     substackUrl: 'https://theunemployableadvisor.substack.com/p/chapter-2-the-self-governing-asset',
-    heroImage: null,
+    heroImage: {
+      src: 'https://substackcdn.com/image/fetch/$s_!Ak2h!,f_auto,q_auto:good,fl_progressive:steep/https%3A%2F%2Fsubstack-post-media.s3.amazonaws.com%2Fpublic%2Fimages%2Ff3f57ce2-384e-42dd-9e46-78d136c9caa1_2752x1536.heic',
+      alt: 'Autonomous business systems — moving from owner-dependent operations to self-governing infrastructure',
+    },
     excerpt:
       'By 2030, buyers will not be purchasing a team — they will be purchasing an Agentic Infrastructure. The Human-to-Revenue ratio is already replacing EBITDA as the primary M&A metric in AI-native markets.',
     sections: [
@@ -117,7 +123,10 @@ export const ARTICLES = [
     date: 'February 2026',
     lens: 'Financial Scrutiny Readiness',
     substackUrl: 'https://theunemployableadvisor.substack.com/p/chapter-7-the-first-glance-economy',
-    heroImage: null,
+    heroImage: {
+      src: 'https://substackcdn.com/image/fetch/$s_!9KZY!,f_auto,q_auto:good,fl_progressive:steep/https%3A%2F%2Fsubstack-post-media.s3.amazonaws.com%2Fpublic%2Fimages%2F99bee94b-b6dc-4d3a-99f4-bffab85783ef_2752x1536.heic',
+      alt: 'First impressions in a business sale — how buyers form their thesis before any spreadsheet is opened',
+    },
     excerpt:
       'The most consequential moments in a business sale happen before any spreadsheet is opened. Buyers form a thesis from the earliest signals. Once that thesis is set, it filters everything that follows.',
     sections: [
@@ -178,7 +187,10 @@ export const ARTICLES = [
     date: 'February 2026',
     lens: 'Financial Scrutiny Readiness',
     substackUrl: 'https://theunemployableadvisor.substack.com/p/chapter-4-prove-your-numbers-are',
-    heroImage: null, // Add { src: '...', alt: 'Financial records and accounts prepared for due diligence' } when URL is available
+    heroImage: {
+      src: 'https://substackcdn.com/image/fetch/$s_!ubfk!,f_auto,q_auto:good,fl_progressive:steep/https%3A%2F%2Fsubstack-post-media.s3.amazonaws.com%2Fpublic%2Fimages%2Ff823008f-6e0d-41bd-b5bc-ccce3dd58a53_1536x1024.heic',
+      alt: 'Financial records and accounts prepared for due diligence',
+    },
     excerpt:
       'Buyers do not check whether your files exist. They stress-test whether your numbers hold up. The gap between "we have the files" and "we can explain every variance" is where valuations collapse.',
     sections: [
