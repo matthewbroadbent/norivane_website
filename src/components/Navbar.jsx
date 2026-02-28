@@ -25,6 +25,7 @@ const Navbar = () => {
     { name: 'What We Do', path: '/what-we-do' },
     { name: 'The Diagnostic', path: '/diagnostic' },
     { name: 'Exit Architecture', path: '/exit-architecture' },
+    { name: 'Insights', path: '/insights' },
     { name: 'About', path: '/about' },
     { name: 'Contact', path: '/contact' },
   ]

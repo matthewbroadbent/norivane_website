@@ -16,6 +16,7 @@ import WhatWeDo from './pages/WhatWeDo';
 import Diagnostic from './pages/Diagnostic';
 import ExitArchitecture from './pages/ExitArchitecture';
 import About from './pages/About';
+import Insights from './pages/Insights';
 import Contact from './pages/Contact';
 import Privacy from './pages/Privacy';
 import Sitemap from './pages/Sitemap';
@@ -40,6 +41,7 @@ function App() {
             <Route path="/diagnostic" element={<Diagnostic />} />
             <Route path="/exit-architecture" element={<ExitArchitecture />} />
             <Route path="/about" element={<About />} />
+            <Route path="/insights" element={<Insights />} />
             <Route path="/contact" element={<Contact />} />
             <Route path="/privacy" element={<Privacy />} />
 
