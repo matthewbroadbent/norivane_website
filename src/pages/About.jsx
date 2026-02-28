@@ -185,7 +185,7 @@ const About = () => {
             </h2>
             <div className="flex flex-col sm:flex-row gap-4 justify-center items-center">
               <a
-                href="https://score.norivane.com/free"
+                href="https://app.norivane.com/free"
                 target="_blank"
                 rel="noopener noreferrer"
                 onClick={() => trackScoreToolClick('about_page')}

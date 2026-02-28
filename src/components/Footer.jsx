@@ -30,7 +30,7 @@ const Footer = () => {
               <li><Link to="/business-oracle" className="text-gray-400 hover:text-teal transition-colors duration-200 text-sm">Business Oracle</Link></li>
               <li>
                 <a
-                  href="https://score.norivane.com/free"
+                  href="https://app.norivane.com/free"
                   target="_blank"
                   rel="noopener noreferrer"
                   onClick={() => trackScoreToolClick('footer')}

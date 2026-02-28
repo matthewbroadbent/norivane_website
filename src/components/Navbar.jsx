@@ -68,7 +68,7 @@ const Navbar = () => {
             ))}
 
             <a
-              href="https://score.norivane.com/free"
+              href="https://app.norivane.com/free"
               target="_blank"
               rel="noopener noreferrer"
               onClick={() => trackScoreToolClick('navbar_desktop')}
@@ -110,7 +110,7 @@ const Navbar = () => {
             ))}
             <div className="pt-2">
               <a
-                href="https://score.norivane.com/free"
+                href="https://app.norivane.com/free"
                 target="_blank"
                 rel="noopener noreferrer"
                 onClick={() => trackScoreToolClick('navbar_mobile')}

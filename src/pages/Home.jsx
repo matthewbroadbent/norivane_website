@@ -46,7 +46,7 @@ const Home = () => {
 
             <div className="flex flex-col sm:flex-row gap-4 justify-center items-center">
               <a
-                href="https://score.norivane.com/free"
+                href="https://app.norivane.com/free"
                 target="_blank"
                 rel="noopener noreferrer"
                 onClick={() => trackScoreToolClick('home_hero')}
@@ -147,7 +147,7 @@ const Home = () => {
               Answer the free diagnostic. Get your score. Understand what a buyer sees.
             </p>
             <a
-              href="https://score.norivane.com/free"
+              href="https://app.norivane.com/free"
               target="_blank"
               rel="noopener noreferrer"
               onClick={() => trackScoreToolClick('home_cta_section')}
@@ -194,7 +194,7 @@ const Home = () => {
                 before you think you need it.
               </p>
               <a
-                href="https://score.norivane.com/free"
+                href="https://app.norivane.com/free"
                 target="_blank"
                 rel="noopener noreferrer"
                 onClick={() => trackScoreToolClick('home_product_ladder')}
@@ -314,7 +314,7 @@ const Home = () => {
 
             <div className="flex flex-col sm:flex-row gap-4 justify-center items-center">
               <a
-                href="https://score.norivane.com/free"
+                href="https://app.norivane.com/free"
                 target="_blank"
                 rel="noopener noreferrer"
                 onClick={() => trackScoreToolClick('home_final_cta')}

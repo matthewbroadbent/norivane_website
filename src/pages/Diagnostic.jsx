@@ -97,7 +97,7 @@ const Diagnostic = () => {
             </ul>
 
             <a
-              href="https://score.norivane.com/free"
+              href="https://app.norivane.com/free"
               target="_blank"
               rel="noopener noreferrer"
               onClick={() => trackScoreToolClick('diagnostic_page')}
