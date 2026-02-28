@@ -212,7 +212,7 @@ const Diagnostic = () => {
             </ul>
 
             <a
-              href="https://score.norivane.com?plan=premium"
+              href="https://score.norivane.com/premium"
               target="_blank"
               rel="noopener noreferrer"
               className="inline-flex items-center gap-2 bg-dark-blue text-white px-8 py-4 rounded-full font-semibold text-lg hover:bg-dark-blue/90 transition-all duration-300 shadow-lg"
