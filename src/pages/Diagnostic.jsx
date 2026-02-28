@@ -155,12 +155,14 @@ const Diagnostic = () => {
               ))}
             </ul>
 
-            <Link
-              to="/contact"
+            <a
+              href="https://app.norivane.com"
+              target="_blank"
+              rel="noopener noreferrer"
               className="inline-flex items-center gap-2 bg-teal text-white px-8 py-4 rounded-full font-semibold text-lg hover:bg-teal/90 transition-all duration-300 shadow-lg"
             >
               Get the Full Diagnostic <ArrowRight size={20} />
-            </Link>
+            </a>
           </motion.div>
         </div>
       </section>
