@@ -179,28 +179,31 @@ const Home = () => {
           </motion.div>
 
           <div className="grid md:grid-cols-3 gap-6">
-            {/* Tier 1 */}
+            {/* Tier 3 — shown first */}
             <motion.div
               initial={{ opacity: 0, y: 30 }}
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true }}
               transition={{ delay: 0 }}
-              className="bg-white rounded-2xl p-8 shadow-sm border border-gray-100 flex flex-col"
+              className="bg-dark-blue rounded-2xl p-8 shadow-sm flex flex-col"
             >
-              <div className="text-sm font-semibold text-teal uppercase tracking-wider mb-3">Free</div>
-              <h3 className="text-xl font-bold text-dark-blue mb-3">Owner Dependence Score</h3>
-              <p className="text-medium-grey text-sm leading-relaxed mb-6 flex-1">
-                One lens. Your score. An explanation of what it means to a buyer — and why it matters
-                before you think you need it.
+              <div className="flex items-center gap-2 mb-3">
+                <span className="bg-teal text-white text-xs font-bold uppercase tracking-wider px-2.5 py-0.5 rounded-full">Recommended</span>
+                <span className="text-sm font-semibold text-teal uppercase tracking-wider">£2,500 + VAT</span>
+              </div>
+              <h3 className="text-xl font-bold text-white mb-3">Diagnostic + Private Briefing</h3>
+              <p className="text-gray-300 text-sm leading-relaxed mb-6 flex-1">
+                All five lenses. A written report. Plus a 90-minute private briefing with Matthew — contextual
+                analysis of your specific situation and a clear action pathway. Already have the Diagnostic?
+                Upgrade within 30 days for £2,000 + VAT.
               </p>
               <a
-                href="https://app.norivane.com/free"
+                href="https://score.norivane.com/premium"
                 target="_blank"
                 rel="noopener noreferrer"
-                onClick={() => trackScoreToolClick('home_product_ladder')}
                 className="inline-flex items-center gap-2 text-teal font-semibold text-sm hover:gap-3 transition-all duration-200"
               >
-                Start now <ArrowRight size={15} />
+                Learn more <ArrowRight size={15} />
               </a>
             </motion.div>
 
@@ -210,11 +213,11 @@ const Home = () => {
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true }}
               transition={{ delay: 0.1 }}
-              className="bg-dark-blue rounded-2xl p-8 shadow-sm flex flex-col"
+              className="bg-white rounded-2xl p-8 shadow-sm border border-gray-100 flex flex-col"
             >
               <div className="text-sm font-semibold text-teal uppercase tracking-wider mb-3">£497 + VAT</div>
-              <h3 className="text-xl font-bold text-white mb-3">Saleability Diagnostic</h3>
-              <p className="text-gray-300 text-sm leading-relaxed mb-6 flex-1">
+              <h3 className="text-xl font-bold text-dark-blue mb-3">Saleability Diagnostic</h3>
+              <p className="text-medium-grey text-sm leading-relaxed mb-6 flex-1">
                 All five lenses. A written report. Your regime classification. A prioritised roadmap of
                 what to address — and in what order — before a transaction.
               </p>
@@ -226,27 +229,29 @@ const Home = () => {
               </Link>
             </motion.div>
 
-            {/* Tier 3 */}
+            {/* Free tier — de-emphasised */}
             <motion.div
               initial={{ opacity: 0, y: 30 }}
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true }}
               transition={{ delay: 0.2 }}
-              className="bg-white rounded-2xl p-8 shadow-sm border border-gray-100 flex flex-col"
+              className="bg-white rounded-2xl p-8 shadow-sm border border-gray-100 flex flex-col opacity-80"
             >
-              <div className="text-sm font-semibold text-teal uppercase tracking-wider mb-3">£2,500 + VAT</div>
-              <h3 className="text-xl font-bold text-dark-blue mb-3">Diagnostic + Private Briefing</h3>
+              <div className="text-sm font-semibold text-teal uppercase tracking-wider mb-3">Free</div>
+              <h3 className="text-xl font-bold text-dark-blue mb-3">Owner Dependence Score</h3>
               <p className="text-medium-grey text-sm leading-relaxed mb-6 flex-1">
-                Everything in Tier 2, plus a 90-minute private briefing with Matthew. Contextual analysis.
-                A clear action pathway. If you have already completed the Saleability Diagnostic, you can
-                upgrade within 30 days for £2,000 + VAT.
+                Not ready to commit? Start here. One lens, 8 minutes, no payment. It tells you where
+                the most common buyer constraint sits in your business.
               </p>
-              <Link
-                to="/contact"
-                className="inline-flex items-center gap-2 text-dark-blue font-semibold text-sm hover:gap-3 transition-all duration-200"
+              <a
+                href="https://app.norivane.com/free"
+                target="_blank"
+                rel="noopener noreferrer"
+                onClick={() => trackScoreToolClick('home_product_ladder')}
+                className="inline-flex items-center gap-2 text-teal font-semibold text-sm hover:gap-3 transition-all duration-200"
               >
-                Get in touch <ArrowRight size={15} />
-              </Link>
+                Start for free <ArrowRight size={15} />
+              </a>
             </motion.div>
           </div>
         </div>
