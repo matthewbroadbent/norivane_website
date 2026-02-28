@@ -3,7 +3,7 @@ import { motion, AnimatePresence } from 'framer-motion'
 import { Plus, Minus } from 'lucide-react'
 import StructuredData from './StructuredData'
 
-const FAQSection = ({ faqs, title = "Frequently Asked Questions" }) => {
+const FAQSection = ({ faqs, title = "Frequently Asked Questions", subtitle = null }) => {
   const [openIndex, setOpenIndex] = useState(null)
 
   const toggleFAQ = (index) => {
@@ -24,9 +24,9 @@ const FAQSection = ({ faqs, title = "Frequently Asked Questions" }) => {
           <h2 className="text-3xl md:text-4xl font-bold text-dark-blue mb-4">
             {title}
           </h2>
-          <p className="text-lg text-medium-grey">
-            Get answers to the most common questions about our services
-          </p>
+          {subtitle && (
+            <p className="text-lg text-medium-grey">{subtitle}</p>
+          )}
         </motion.div>
 
         <div className="space-y-4">

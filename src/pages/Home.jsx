@@ -4,8 +4,44 @@ import { motion } from 'framer-motion'
 import { ArrowRight, ChevronDown } from 'lucide-react'
 import SEOHelmet from '../components/SEOHelmet'
 import SpiderDiagram from '../components/SpiderDiagram'
+import FAQSection from '../components/FAQSection'
 import { useScrollDepth } from '../hooks/useScrollDepth'
 import { trackScoreToolClick } from '../utils/analytics'
+
+const HOME_FAQS = [
+  {
+    question: 'What is the Saleability Diagnostic?',
+    answer: 'A structured assessment of your business across five dimensions that determine what a buyer sees when they look at it. It does not tell you what your business is worth. It tells you where a buyer would apply a discount, demand a protection, or walk away — before they do.',
+  },
+  {
+    question: 'Who is this for?',
+    answer: 'Established founder-led businesses with turnover between £1m and £25m, who are considering an exit within the next five years and want to understand where they stand before a process starts. It is not for startups. It is not for owners who want reassurance rather than scrutiny.',
+  },
+  {
+    question: 'How long does it take?',
+    answer: 'The free Owner Dependence Score takes eight minutes. The full Saleability Diagnostic questionnaire takes 25–40 minutes. The written report is delivered within one to three hours of completion, reviewed before release. There are text boxes for you to add comments and context to your answers within the questionnaire. The more information you can give in these areas, the better quality information you will receive back in the report.',
+  },
+  {
+    question: 'Is this a valuation?',
+    answer: 'No. A valuation tells you what your business might be worth. The diagnostic tells you where that number would be discounted — and why. Those are different questions. The diagnostic is a buyer-style structural interpretation, not a financial assessment.',
+  },
+  {
+    question: 'What happens after I receive the report?',
+    answer: 'That depends on what it finds. Some owners take the report and act on it directly. Others want to work through the implications — that is what the Private Briefing is for. There is no obligation to do anything further.',
+  },
+  {
+    question: 'Why would I do this now rather than when I am closer to selling?',
+    answer: 'Because most of what the diagnostic identifies cannot be fixed quickly. Owner dependence, management depth, commercial concentration — these are structural. They take months to years to address properly. A founder who starts two years before a transaction has options. A founder who starts six months before does not.',
+  },
+  {
+    question: 'How is this different from speaking to a business broker or adviser?',
+    answer: "A broker will normally put a value on your business with a view to getting you to sign up and join their brokerage site. 90% of businesses offered for sale on brokers' sites do not sell. Whereas, those business owners who properly prepare for a business sale and follow a business exit strategy are, on average, likely to increase the value of their business by 25% compared to a business owner who does not prepare for sale.",
+  },
+  {
+    question: 'What is the Private Briefing?',
+    answer: 'A 90-minute working session with Matthew Broadbent following the written diagnostic. It is not a presentation of the report. It is a conversation about what the findings mean for your specific situation — your sector, your timeline, your likely buyer profile — and what to address first given where you are now.',
+  },
+]
 
 const fadeInUp = {
   initial: { opacity: 0, y: 40 },
@@ -343,6 +379,12 @@ const Home = () => {
           </motion.div>
         </div>
       </section>
+
+      {/* FAQ */}
+      <FAQSection
+        faqs={HOME_FAQS}
+        title="Common questions"
+      />
 
       {/* Section 7 — Final CTA */}
       <section className="py-24 bg-dark-blue">
