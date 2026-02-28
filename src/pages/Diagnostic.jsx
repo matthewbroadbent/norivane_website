@@ -50,7 +50,7 @@ const Diagnostic = () => {
         </div>
       </section>
 
-      {/* Tier 1 */}
+      {/* Tier 3 — Diagnostic + Private Briefing (shown first) */}
       <section className="py-20 bg-white">
         <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
           <motion.div
@@ -59,35 +59,36 @@ const Diagnostic = () => {
             viewport={{ once: true }}
             variants={fadeInUp}
           >
-            <div className="flex items-baseline gap-4 mb-6">
-              <span className="text-sm font-semibold text-teal uppercase tracking-wider">Free</span>
-              <h2 className="text-3xl font-bold text-dark-blue">Owner Dependence Score</h2>
+            <div className="flex items-center gap-3 mb-6">
+              <span className="bg-teal text-white text-xs font-bold uppercase tracking-wider px-3 py-1 rounded-full">
+                Recommended
+              </span>
+              <span className="text-sm font-semibold text-teal uppercase tracking-wider">£2,500 + VAT</span>
             </div>
+            <h2 className="text-3xl font-bold text-dark-blue mb-6">Diagnostic + Private Briefing</h2>
 
             <div className="space-y-5 text-lg text-dark-grey leading-relaxed mb-8">
               <p>
-                Owner Dependence is the dimension buyers interrogate first. It is the most common
-                constraint that determines a business's regime — and the one that takes the longest
-                to address.
+                The full written diagnostic, plus a 90-minute private briefing with Matthew Broadbent.
               </p>
               <p>
-                The free diagnostic covers this single lens. It takes 8 minutes. It produces a score,
-                a regime classification (Strength, Stable, Constraint, or Risk), and an explanation
-                of what a buyer sees in that dimension and why it matters to a transaction.
+                The briefing is not a presentation of the report. It is a working session — contextual
+                analysis of your specific situation, discussion of the constraints the report identifies,
+                and a clear action pathway tailored to your timeline and objectives.
               </p>
               <p>
-                No roadmap. No remediation advice. Just an honest read of where this dimension stands
-                from a buyer's perspective.
+                Already completed the Saleability Diagnostic? Upgrade within 30 days and the cost
+                is £2,000 + VAT — your Tier 2 fee is offset against the total.
               </p>
             </div>
 
             <ul className="space-y-2 mb-8">
               {[
-                'One lens: Owner Dependence',
-                'Score and regime classification',
-                'Buyer-perspective explanation of your result',
-                'Takes 8 minutes',
-                'No payment required',
+                'Full written Saleability Diagnostic',
+                '90-minute private briefing with Matthew Broadbent',
+                'Contextual analysis of your specific business situation',
+                'Clear action pathway with timeline',
+                'Upgrade within 30 days of Tier 2 for £2,000 + VAT — Tier 2 fee offset against total',
               ].map((item) => (
                 <li key={item} className="flex items-start gap-3 text-dark-grey">
                   <Check size={18} className="text-teal mt-0.5 flex-shrink-0" />
@@ -97,19 +98,18 @@ const Diagnostic = () => {
             </ul>
 
             <a
-              href="https://app.norivane.com/free"
+              href="https://score.norivane.com/premium"
               target="_blank"
               rel="noopener noreferrer"
-              onClick={() => trackScoreToolClick('diagnostic_page')}
               className="inline-flex items-center gap-2 bg-teal text-white px-8 py-4 rounded-full font-semibold text-lg hover:bg-teal/90 transition-all duration-300 shadow-lg"
             >
-              Start the Assessment <ArrowRight size={20} />
+              Book a Private Briefing <ArrowRight size={20} />
             </a>
           </motion.div>
         </div>
       </section>
 
-      {/* Tier 2 */}
+      {/* Tier 2 — Saleability Diagnostic */}
       <section className="py-20 bg-dark-blue">
         <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
           <motion.div
@@ -167,58 +167,36 @@ const Diagnostic = () => {
         </div>
       </section>
 
-      {/* Tier 3 */}
-      <section className="py-20 bg-white">
+      {/* Free tier — compact footnote */}
+      <section className="py-12 bg-white border-t border-gray-100">
         <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
           <motion.div
             initial="initial"
             whileInView="animate"
             viewport={{ once: true }}
             variants={fadeInUp}
+            className="flex flex-col sm:flex-row sm:items-center gap-6"
           >
-            <div className="flex items-baseline gap-4 mb-6">
-              <span className="text-sm font-semibold text-teal uppercase tracking-wider">£2,500 + VAT</span>
-              <h2 className="text-3xl font-bold text-dark-blue">Diagnostic + Private Briefing</h2>
-            </div>
-
-            <div className="space-y-5 text-lg text-dark-grey leading-relaxed mb-8">
-              <p>
-                The full written diagnostic, plus a 90-minute private briefing with Matthew Broadbent.
-              </p>
-              <p>
-                The briefing is not a presentation of the report. It is a working session — contextual
-                analysis of your specific situation, discussion of the constraints the report identifies,
-                and a clear action pathway tailored to your timeline and objectives.
-              </p>
-              <p>
-                Already completed the Saleability Diagnostic? Upgrade within 30 days and the cost
-                is £2,000 + VAT — your Tier 2 fee is offset against the total.
+            <div className="flex-1">
+              <span className="text-xs font-semibold text-teal uppercase tracking-wider">Free</span>
+              <h3 className="text-xl font-bold text-dark-blue mt-1 mb-2">Owner Dependence Score</h3>
+              <p className="text-dark-grey leading-relaxed">
+                Not ready to commit? Start with the free Owner Dependence Score. One lens, 8 minutes,
+                no payment required. It tells you where the most common buyer constraint sits in your business
+                — and whether it warrants urgent attention.
               </p>
             </div>
-
-            <ul className="space-y-2 mb-8">
-              {[
-                'Full written Saleability Diagnostic',
-                '90-minute private briefing with Matthew Broadbent',
-                'Contextual analysis of your specific business situation',
-                'Clear action pathway with timeline',
-                'Upgrade within 30 days of Tier 2 for £2,000 + VAT — Tier 2 fee offset against total',
-              ].map((item) => (
-                <li key={item} className="flex items-start gap-3 text-dark-grey">
-                  <Check size={18} className="text-teal mt-0.5 flex-shrink-0" />
-                  <span>{item}</span>
-                </li>
-              ))}
-            </ul>
-
-            <a
-              href="https://score.norivane.com/premium"
-              target="_blank"
-              rel="noopener noreferrer"
-              className="inline-flex items-center gap-2 bg-dark-blue text-white px-8 py-4 rounded-full font-semibold text-lg hover:bg-dark-blue/90 transition-all duration-300 shadow-lg"
-            >
-              Book a Private Briefing <ArrowRight size={20} />
-            </a>
+            <div className="flex-shrink-0">
+              <a
+                href="https://app.norivane.com/free"
+                target="_blank"
+                rel="noopener noreferrer"
+                onClick={() => trackScoreToolClick('diagnostic_page')}
+                className="inline-flex items-center gap-2 border-2 border-teal text-teal px-6 py-3 rounded-full font-semibold hover:bg-teal hover:text-white transition-all duration-300"
+              >
+                Start for free <ArrowRight size={18} />
+              </a>
+            </div>
           </motion.div>
         </div>
       </section>
