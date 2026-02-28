@@ -203,7 +203,7 @@ const Home = () => {
                 rel="noopener noreferrer"
                 className="inline-flex items-center gap-2 text-teal font-semibold text-sm hover:gap-3 transition-all duration-200"
               >
-                Learn more <ArrowRight size={15} />
+                Book the Briefing <ArrowRight size={15} />
               </a>
             </motion.div>
 
@@ -225,7 +225,7 @@ const Home = () => {
                 to="/diagnostic"
                 className="inline-flex items-center gap-2 text-teal font-semibold text-sm hover:gap-3 transition-all duration-200"
               >
-                Learn more <ArrowRight size={15} />
+                Get the Diagnostic <ArrowRight size={15} />
               </Link>
             </motion.div>
 
@@ -292,14 +292,54 @@ const Home = () => {
               </p>
             </div>
 
-            <div className="mt-10">
+            <div className="mt-10 space-y-4">
               <Link
                 to="/about"
                 className="inline-flex items-center gap-2 text-teal font-semibold hover:gap-3 transition-all duration-200"
               >
                 Read more about the methodology <ArrowRight size={16} />
               </Link>
+              <p className="text-dark-grey">
+                If this is the lens you want applied to your business,{' '}
+                <Link to="/diagnostic" className="text-teal font-semibold hover:underline">
+                  start with the Diagnostic
+                </Link>
+                .
+              </p>
             </div>
+          </motion.div>
+        </div>
+      </section>
+
+      {/* Testimonials */}
+      <section className="py-16 bg-gray-50">
+        <div className="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8">
+          <motion.div
+            initial="initial"
+            whileInView="animate"
+            viewport={{ once: true }}
+            variants={fadeInUp}
+            className="grid md:grid-cols-3 gap-6"
+          >
+            {[
+              {
+                quote: 'One of a rare breed who demonstrates not only a high level of financial expertise, but also a high degree of business acumen. He translates the financial aspects of running a business to both the strategic and tactical needs of the organisation.',
+                attribution: 'Managing Director, construction sector',
+              },
+              {
+                quote: 'Hard-won through years in boardrooms, high-stakes meetings, late-night document reviews, reading people acutely, and skilfully navigating conversations to uncover the truth. Time spent in Matthew\'s company is always an investment.',
+                attribution: 'Senior Technology Professional',
+              },
+              {
+                quote: 'Robust financial analysis of investment opportunities, helpful strategic input, absolute integrity.',
+                attribution: 'Finance and Investment Director, property sector',
+              },
+            ].map((t) => (
+              <div key={t.attribution} className="bg-white rounded-2xl p-8 shadow-sm border border-gray-100">
+                <p className="text-dark-grey text-sm leading-relaxed mb-4 italic">&ldquo;{t.quote}&rdquo;</p>
+                <p className="text-teal text-xs font-semibold uppercase tracking-wider">{t.attribution}</p>
+              </div>
+            ))}
           </motion.div>
         </div>
       </section>
@@ -314,26 +354,26 @@ const Home = () => {
             variants={fadeInUp}
           >
             <h2 className="text-3xl md:text-4xl font-bold text-white mb-10">
-              Where do you want to start?
+              Ready to see what a buyer sees?
             </h2>
 
             <div className="flex flex-col sm:flex-row gap-4 justify-center items-center">
+              <Link
+                to="/diagnostic"
+                className="bg-teal hover:bg-teal/90 text-white px-8 py-4 rounded-full font-semibold text-lg transition-all duration-300 shadow-xl"
+              >
+                Go to the Diagnostic
+              </Link>
+
               <a
                 href="https://app.norivane.com/free"
                 target="_blank"
                 rel="noopener noreferrer"
                 onClick={() => trackScoreToolClick('home_final_cta')}
-                className="bg-teal hover:bg-teal/90 text-white px-8 py-4 rounded-full font-semibold text-lg transition-all duration-300 shadow-xl"
-              >
-                Check Your Score Free
-              </a>
-
-              <Link
-                to="/diagnostic"
                 className="text-white hover:text-teal border-b border-white/30 hover:border-teal pb-0.5 font-medium text-lg transition-all duration-300"
               >
-                Go straight to the full diagnostic →
-              </Link>
+                Or check your Owner Dependence Score free first →
+              </a>
             </div>
           </motion.div>
         </div>
