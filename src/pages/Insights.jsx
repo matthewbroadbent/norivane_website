@@ -1,21 +1,11 @@
 import React, { useEffect } from 'react'
 import { Link } from 'react-router-dom'
 import { motion } from 'framer-motion'
-import { ArrowRight, Clock } from 'lucide-react'
+import { ArrowRight } from 'lucide-react'
 import { trackEvent } from '../utils/analytics'
 import SEOHelmet from '../components/SEOHelmet'
 import BreadcrumbNavigation from '../components/BreadcrumbNavigation'
 import { ARTICLES } from '../data/articles'
-
-const COMING_SOON = {
-  chapter: 'Chapter 5',
-  title: 'Revenue Concentration',
-  date: '6 March 2026',
-  lens: 'Commercial Concentration',
-  excerpt:
-    'How concentrated your revenue is — across clients, contracts, and channels — is one of the first things a serious buyer prices. This chapter examines what buyer scrutiny of commercial concentration actually looks like, and what it costs when the numbers are exposed.',
-  substackUrl: 'https://open.substack.com/pub/theunemployableadvisor/p/chapter-05-revenue-concentration',
-}
 
 const fadeInUp = {
   initial: { opacity: 0, y: 30 },
@@ -115,35 +105,6 @@ const Insights = () => {
               </motion.div>
             ))}
 
-            {/* Coming soon */}
-            <motion.div
-              initial={{ opacity: 0, y: 30 }}
-              whileInView={{ opacity: 1, y: 0 }}
-              viewport={{ once: true }}
-              transition={{ delay: ARTICLES.length * 0.08 }}
-              className="bg-gray-50 rounded-2xl border border-gray-200 p-8"
-            >
-              <div className="flex flex-wrap items-center gap-3 mb-4">
-                <span className="text-xs font-bold text-teal uppercase tracking-wider">
-                  {COMING_SOON.chapter}
-                </span>
-                <span className="text-xs font-semibold bg-teal/10 text-teal px-2.5 py-0.5 rounded-full">
-                  {COMING_SOON.lens}
-                </span>
-                <span className="text-xs font-semibold bg-amber-50 text-amber-700 border border-amber-200 px-2.5 py-0.5 rounded-full flex items-center gap-1">
-                  <Clock size={11} />
-                  Publishing {COMING_SOON.date}
-                </span>
-              </div>
-
-              <h2 className="text-2xl font-bold text-gray-500 mb-4">
-                {COMING_SOON.title}
-              </h2>
-
-              <p className="text-gray-400 leading-relaxed">
-                {COMING_SOON.excerpt}
-              </p>
-            </motion.div>
           </div>
         </div>
       </section>
