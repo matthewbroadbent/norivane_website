@@ -300,4 +300,80 @@ export const ARTICLES = [
       },
     ],
   },
+  {
+    slug: 'chapter-6',
+    chapter: 'Chapter 6',
+    title: 'The Management Mirage',
+    date: 'March 2026',
+    lens: 'Owner Dependence',
+    substackUrl: 'https://theunemployableadvisor.substack.com/p/chapter-6-the-management-mirage',
+    heroImage: {
+      src: 'https://substackcdn.com/image/fetch/$s_!Kaii!,f_auto,q_auto:good,fl_progressive:steep/https%3A%2F%2Fsubstack-post-media.s3.amazonaws.com%2Fpublic%2Fimages%2F4cd68a04-32bd-4abc-89b3-80c0d6db1b4d_1536x1024.heic',
+      alt: 'The Management Mirage — how buyers test governance architecture, not just operational competence, when capital is at stake',
+    },
+    excerpt:
+      'Buyers are not first assessing competence. They are assessing whether capital is protected from bias. Management depth is the distribution of decision authority in a way that protects capital from individual conviction.',
+    sections: [
+      {
+        heading: null,
+        body: [
+          'We were sitting in the Celtic Manor trying to explain why the numbers had deteriorated.',
+          'Production was running at a negative margin. We were losing up to £250,000 per month. The burn had been disclosed accurately. There was no attempt to disguise it.',
+          "The buyer asked one question. 'Why did your FD not tell you to stop production?' It was asked calmly. Once. He looked at the founder. The founder paused and looked at me. I was the FD.",
+          'I articulated the argument that increased volume would improve unit economics. The theory was coherent. It simply was not proving true in practice.',
+          'The fuller truth was less comfortable. I had already advised that production should stop. The MD believed scale would correct the margin and overrode that advice. The principal shareholder supported the decision. What he said, went.',
+          'For months, my future joint CEO and I had argued that the business required equity, not debt. It was effectively a start-up and had not yet proved the model. No lender would fund it because we could not demonstrate repayment capacity through trading reality.',
+          'The shareholder did not want dilution. Additional capital stopped. By the time we sought equity investors, the business was structurally insolvent and our position weak.',
+          'In that room, with a single question, the buyer understood the situation. The issue was not margin. It was governance.',
+          'I felt exposed. And, if I am honest, angry.',
+        ],
+      },
+      {
+        heading: 'Management Depth Is Capital Protection',
+        body: [
+          'Founders often describe management strength in terms of capability. Strong operator. Experienced FD. Trusted team.',
+          'Buyers think differently. They are not first assessing competence. They are assessing whether capital is protected from bias.',
+          'The Cadbury Report defined corporate governance as the system by which companies are directed and controlled. That definition was written for listed companies. But the underlying principle applies wherever capital and operational authority intersect. If there is no mechanism for the system to check itself, governance is nominal.',
+          'Management depth is the distribution of decision authority in a way that protects capital from individual conviction. It is the presence of internal friction. In structurally sound businesses, finance can halt uneconomic production. Strategy can be slowed by cash reality. Capital allocation can be challenged. Senior leaders can be overruled on economic grounds.',
+          'That overrule is what I now call the economic veto. An economic veto exists when someone within the system has both the authority and the obligation to stop a decision that damages capital, even if it conflicts with the conviction of a founder or shareholder.',
+          'Without that veto, there is no depth. There is alignment. And alignment without constraint is fragile.',
+          'In Wales, belief and capital sat on the same side of the table. There was no functioning economic veto. The buyer saw that immediately.',
+        ],
+      },
+      {
+        heading: 'What Buyers Are Actually Testing',
+        body: [
+          'Operational competence and governance authority are not the same thing. A business can have capable managers and still lack depth.',
+          'Operational competence answers the question: can the team execute? Governance authority answers a different question: can the team restrain execution when it becomes uneconomic? The first drives activity. The second protects capital. Many owner-managed businesses score well on the first and dangerously low on the second.',
+          'The UK Corporate Governance Code requires boards of listed companies to declare the effectiveness of their material internal controls, covering financial, operational and compliance functions. The 2024 revision strengthened that requirement precisely because monitoring without constraint had proved insufficient. Boards were confirming they had reviewed controls without ever declaring those controls were effective. The distinction is telling.',
+          "When a buyer questions decision-making during due diligence, they are not interrogating personalities. They are testing error containment. Every business makes misjudgements. The difference between institutional businesses and personality-led businesses is whether the system can detect and correct them. If optimism can override economics repeatedly, losses compound, capital erodes and strategic flexibility narrows. Recovery depends on the same judgement that caused the error.",
+          "That is unprotected capital. Unprotected capital increases risk. Risk reduces transferable value.",
+          "The question in that meeting was not about monthly burn. It was about whether the business had a mechanism to stop itself. The silence answered it.",
+        ],
+      },
+      {
+        heading: 'Authority Architecture and What Gets Priced',
+        body: [
+          'Management depth is not measured by the number of people on an org chart. It is measured by veto power.',
+          'The harder question is not who can challenge a bad decision but who can stop one. Not debate it. Stop it. If the answer ultimately rests with one individual, the business is structurally thin. If capital provider and operational authority are fused without counterbalance, governance collapses into personality.',
+          "IRS Revenue Ruling 59-60, the foundational guidance on valuing closely held businesses, identifies the loss of a key manager as a factor that may depress enterprise value, particularly where there is a lack of trained personnel capable of succeeding to the management of the enterprise. The ruling dates from 1959, yet its logic remains the standard reference point in business valuation globally. Aswath Damodaran's work on private company valuation at NYU Stern argues that the key person effect should be modelled directly into projected cash flows rather than applied as an arbitrary percentage discount. Value the firm with the key person in place. Then value it again with their departure built into revenues, earnings and expected cash flows. The difference is the key person discount. The method is more demanding than applying a flat 15% or 20% reduction, but it forces a harder question: what exactly would change if this person left? In businesses where the answer is 'nearly everything,' the discount can be severe.",
+          'In private equity due diligence, key person risk and leadership depth are documented alongside financial quality and systems readiness. The assessment is not sentimental. If the decision system depends on discretionary judgement rather than distributed authority, integration risk increases, forecast reliability weakens and replacement cost rises. Markets reward businesses where risk is institutionalised and contained. They discount businesses where risk is personalised and discretionary.',
+          'At acquisition, a buyer inherits a decision system. They are not only buying earnings. They are buying the mechanism that produces those earnings. Management depth is the institutionalisation of economic veto power. Without it, you do not have a transferable platform. You have revenue attached to a personality.',
+          'Personalities do not transfer at institutional multiples.',
+        ],
+      },
+      {
+        heading: 'What Persists After the Room Goes Quiet',
+        body: [
+          'The Cadbury Committee was convened after a series of corporate failures exposed the consequences of unchecked executive authority. Maxwell. BCCI. Polly Peck. The pattern was consistent: concentrated decision rights, inadequate internal challenge, and governance structures that existed formally but not functionally.',
+          'Those were listed companies. But the pattern was not confined to the listed market. I was at Deloitte when BCCI collapsed. Too junior to work on the insolvency directly, but I remember my manager, Paul, disappearing into the BCCI team when it broke. I did not see him for months. The structural pattern was the same one I later sat opposite at the Celtic Manor: concentrated decision rights, inadequate internal challenge, and governance that existed formally but not functionally.',
+          'The SME population carries an analogous exposure with less visibility and no regulatory requirement to disclose it. According to the Department for Business and Trade, 74% of UK private sector businesses have no employees beyond the owner. Within that population, the proportion of businesses where a single individual holds effective control over capital allocation, customer relationships and strategic direction is not a subset. It is close to the entirety. There is no systematic data on how many of those businesses could survive a transition event. The OECD\'s work on business transfers suggests the failure rate is high, and the consequences extend well beyond the shareholders involved.',
+          'The problem is not that founders lack intelligence. It is that the architecture of most owner-managed businesses does not create the conditions for internal challenge. Execution without constraint creates momentum. Momentum without economic discipline erodes value. The erosion is invisible until it is not.',
+          'I sat in that room at the Celtic Manor and I knew exactly what had happened. I had the authority to advise but not to stop. The structure permitted conviction to override economics. The buyer did not need a spreadsheet to see it. He needed one question.',
+          'Most businesses never face that question until someone with capital on the line decides to ask it.',
+          'By then, the answer is already built into the price.',
+        ],
+      },
+    ],
+  },
 ]
