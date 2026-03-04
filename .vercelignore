@@ -1,4 +1,3 @@
-api/
 *.log
 node_modules/
 .env
