@@ -24,6 +24,7 @@ import Sitemap from './pages/Sitemap';
 import BusinessOracle from './pages/BusinessOracle';
 import NotFound from './pages/NotFound';
 import SitemapGenerator from './components/SitemapGenerator';
+import InsightsAdmin from './pages/InsightsAdmin';
 
 function App() {
   return (
@@ -34,6 +35,9 @@ function App() {
         <Routes>
           {/* Sitemap Route */}
           <Route path="/sitemap.xml" element={<Sitemap />} />
+
+          {/* Admin Route (no nav/footer) */}
+          <Route path="/insights/manage" element={<InsightsAdmin />} />
 
           {/* Main Layout Routes */}
           <Route element={<MainLayout />}>
