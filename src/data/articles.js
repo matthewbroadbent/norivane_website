@@ -305,7 +305,7 @@ export const ARTICLES = [
     chapter: 'Chapter 6',
     title: 'The Management Mirage',
     date: 'March 2026',
-    lens: 'Owner Dependence',
+    lens: 'Management Depth',
     substackUrl: 'https://theunemployableadvisor.substack.com/p/chapter-6-the-management-mirage',
     heroImage: {
       src: 'https://substackcdn.com/image/fetch/$s_!Kaii!,f_auto,q_auto:good,fl_progressive:steep/https%3A%2F%2Fsubstack-post-media.s3.amazonaws.com%2Fpublic%2Fimages%2F4cd68a04-32bd-4abc-89b3-80c0d6db1b4d_1536x1024.heic',
