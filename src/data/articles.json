@@ -457,5 +457,96 @@
         ]
       }
     ]
+  },
+  {
+    "slug": "chapter-8",
+    "chapter": "Chapter 8",
+    "title": "The Moment the Numbers Move",
+    "date": "March 2026",
+    "lens": "Systems & Data",
+    "substackUrl": "https://theunemployableadvisor.substack.com/publish/post/189907607",
+    "heroImage": {
+      "src": "https://substackcdn.com/image/fetch/$s_!kyky!,f_auto,q_auto:good,fl_progressive:steep/https%3A%2F%2Fsubstack-post-media.s3.amazonaws.com%2Fpublic%2Fimages%2Fa8cede0e-0d31-4a5d-84af-2a6c880148fa_1024x576.jpeg",
+      "alt": "Why buyers stop valuing the business and start valuing the information"
+    },
+    "excerpt": "I have a small habit when I walk into a business for the first time.\n\nBefore I ask about strategy, customers or growth plans, I ask for three things. The statutory accounts from Companies House. The management accounts for the same year. And the most recent monthly management pack.\n\nThen I start with something very simple........",
+    "sections": [
+      {
+        "heading": null,
+        "body": [
+          "I have a small habit when I walk into a business for the first time.",
+          "Before I ask about strategy, customers or growth plans, I ask for three things. The statutory accounts from Companies House. The management accounts for the same year. And the most recent monthly management pack.",
+          "Then I start with something very simple. Do the management accounts reconcile to the statutory accounts?",
+          "They usually don’t. That’s normal. Adjustments happen during year-end. What I am looking for is the reconciliation. A clean bridge between the two.",
+          "Then I check something else. Do the sales reports reconcile to the top line of the profit and loss account? And after that: do the cost reports reconcile to cost of sales?",
+          "Three checks. That’s all.",
+          "What I am really testing is not the accuracy of the numbers. I am testing their consistency. Because once the numbers stop lining up, something deeper is happening inside the business.",
+          "In my first operational business, a tour operating company, the reporting system worked like a machine. At the top sat the overall profit and loss account. Underneath that we broke performance down by programme. France. Italy. Spain. Each programme had the same structure. Volume of weeks sold. Sales. Cost of sales. Margin. Then we split margin into categories: accommodation, flights, car hire, ferries, insurance. If we wanted to go deeper we could go by region within a country. Or by individual property. Everything traced back to the same place. The profit and loss account.",
+          "Alongside that sat the marketing system. Sales were broken down by programme and then by marketing source. Past clients. Advertising. Agencies. That meant we could see how many weeks were sold from each channel and how much it had cost to generate those sales. Under advertising we could go further still, tracing performance down to individual adverts where attribution was clear.",
+          "We ran that structure year after year. It became a machine. If we launched a new programme, we simply slotted it into the framework. Everyone understood how the machine worked and which part of it they were responsible for. Sales, programme management, operations. And because everything reconciled back to the profit and loss account, the numbers never drifted.",
+          "Buyers later told us it was the most detailed reporting system they had seen in a business of that size. What they were really saying was something simpler. The numbers held together."
+        ]
+      },
+      {
+        "heading": "When the Bridge Breaks",
+        "body": [
+          "Years later I walked into a very different environment. A waste business in the middle of building a plant that was supposed to cost between five and ten million pounds.",
+          "The first thing I tried to do was reconcile the balance sheet from one month to the next. In principle that should be straightforward. The change in net assets should equal the profit or loss for the period. It didn’t. And there was no reconciliation explaining the difference.",
+          "Then the next problem appeared. The fixed asset register was effectively out of control. Millions had already been spent on plant construction but nobody could clearly explain which items were capitalised and which were treated as revenue. Different people held different views. It took months just to get the fixed assets into some form of order. Even then the picture remained unstable.",
+          "The business had also received grant funding. The reporting required for the grants was structured completely differently from the reporting needed to run the business. The previous incumbent had tried to merge the two. The result was that the reports were incomprehensible for both purposes. Grant analysis didn’t match operational reporting. Operational reporting didn’t match the balance sheet.",
+          "At the same time senior management were frequently changing their interpretation of the rules. Revenue recognition became a matter of debate. Capitalisation became a matter of debate. Board members disagreed with shareholders about how transactions should be treated.",
+          "At that point the problem was no longer accounting. It was credibility.",
+          "Because if the definitions keep changing, the numbers move with them.",
+          "This is something that shows up consistently in corporate reporting reviews. The Financial Reporting Council’s thematic review of the UK’s largest private companies found that the quality of reporting was mixed, with particular weaknesses in how companies explained material matters involving complexity or judgement [SRC-01]. Revenue recognition, the treatment of provisions and the classification of financial instruments were all areas where disclosure fell short of what the FRC expected. These are listed companies. In the SME market, below the audit threshold, the exposure is far greater and entirely invisible until someone looks.",
+          "The problem is not confined to one jurisdiction or one size of business. Gartner’s research estimates that poor data quality costs organisations an average of $12.9 million per year [SRC-02]. That figure captures operational inefficiencies and flawed decision-making in large enterprises. Scale it down to a founder-led business with £5 million in turnover and the cost is not millions in wasted spend. It is something worse. It is an information system that cannot answer a buyer’s question twice and get the same answer."
+        ]
+      },
+      {
+        "heading": "The Moment the Conversation Changes",
+        "body": [
+          "This is the moment buyers watch for in diligence. Not the first bad number. The first number that moves when questioned.",
+          "Once that happens the conversation changes. Buyers stop trying to understand the performance of the business and start trying to understand the reliability of the information describing that performance.",
+          "If revenue by customer cannot be reconciled to the accounts system, something is wrong. If margin analysis cannot be traced back to the profit and loss account, something is wrong. If the balance sheet does not explain the movement in net assets, something is wrong.",
+          "None of these problems necessarily mean the business is dishonest. But they do mean something else. The information system cannot support scrutiny.",
+          "In private acquisitions, this is where deals slow down, reprice or collapse entirely. Bain & Company’s research on M&A outcomes found that almost 60% of executives attributed deal failure to poor due diligence that did not identify critical issues, and that failure to surface problems around asset quality was the leading cause of unsuccessful deals [SRC-03]. The inverse is also true. Where diligence surfaced clean, reconcilable information, deals closed faster and at stronger multiples. The mechanism is straightforward: reconcilable data compresses the time between interest and commitment, while inconsistent data extends it and erodes trust with every additional question.",
+          "Quality of earnings analysis, now a standard component of financial due diligence in private acquisitions, exists precisely for this reason. Its purpose is not to verify that accounts are correct in the statutory sense. It is to establish whether the earnings the vendor claims are real, recurring and supportable [SRC-04]. The analysis works outward from adjusted EBITDA, testing whether revenue recognition is consistent, whether cost allocations hold under scrutiny and whether working capital movements can be explained. Where the underlying data is clean and traceable, this process takes weeks. Where it is not, it takes months and frequently ends with a repriced deal or no deal at all.",
+          "Private equity investors have become particularly disciplined on this point. RSM’s work on data diligence in private equity found that middle-market companies frequently struggle with poor-quality customer master data, including incomplete, inaccurate or inconsistent records, and that these gaps directly undermine the buyer’s ability to validate growth assumptions [SRC-05]. The consequence is not that the deal dies immediately. It is that the buyer’s confidence erodes incrementally. Every question that produces a different answer from the last one widens the gap between what the seller believes the business is worth and what the buyer is willing to pay."
+        ]
+      },
+      {
+        "heading": "What Buyers Are Pricing When They Price Information Risk",
+        "body": [
+          "There is a useful distinction between performance risk and information risk. Performance risk is the possibility that future earnings will differ from projections. Every buyer accepts that. Information risk is the possibility that the data describing past performance is unreliable. Buyers do not accept that. They price it.",
+          "When a buyer encounters a reporting system where operational metrics reconcile cleanly to financial results, where sales analysis ties to revenue, where cost analysis ties to cost of sales and where balance sheet movements explain themselves, the diligence process becomes an exercise in understanding the business. The buyer can focus on commercial questions: customer concentration, pricing power, margin sustainability, competitive positioning. These are questions with debatable answers, which is normal in a negotiation.",
+          "When a buyer encounters a reporting system where numbers shift depending on who produced them, where definitions changed mid-period, where reconciliation trails do not exist, the diligence process becomes an exercise in understanding the information. The buyer is no longer asking whether the business is good. The buyer is asking whether the description of the business is trustworthy.",
+          "That shift is expensive. It extends timelines, increases advisory costs, invites deeper requests for supporting evidence and fundamentally repositions the negotiation from collaborative to adversarial. In many cases it introduces retention mechanisms, earn-out structures or price adjustments that transfer risk back to the seller. The OECD’s work on business transfers and SME policy notes that a significant number of economically sound SMEs exit the market each year as a result of problematic transfers, and identifies the absence of adequate preparation as a primary contributing factor [SRC-06]. Information readiness is not a footnote in that preparation. It is the foundation."
+        ]
+      },
+      {
+        "heading": "The Machine and Its Absence",
+        "body": [
+          "This is why Systems & Data Integrity sits as one of the five structural lenses in the diagnostic framework. Not because businesses need more software. Because transferable companies behave like machines.",
+          "Operational metrics reconcile to financial results. Sales reports tie back to revenue. Cost analysis ties back to cost of sales. Balance sheet movements explain themselves.",
+          "Ask the same question twice and you get the same answer.",
+          "When that happens, buyers gain confidence quickly. When it doesn’t, doubt spreads just as quickly. And doubt is expensive.",
+          "I have seen both versions of the story. One business where every number traced back cleanly to the profit and loss account. Buyers looked at the reporting structure and immediately understood how the machine worked. Another where the numbers shifted depending on who produced them, where definitions changed mid-conversation and where nobody could reconcile the balance sheet from one month to the next.",
+          "PwC’s Global Family Business Survey found that nearly two thirds of family businesses do not have a documented and communicated succession plan [SRC-07]. The IFAC’s analysis of SME transfers draws a direct line between that absence and the failure rate: SMEs are more at risk of succession failure than large businesses precisely because so few have formal preparation in place [SRC-08]. The reasons are predictable. Time constraints. Complexity avoidance. Reluctance to confront the question of what happens after the founder leaves. But beneath all of those reasons sits a simpler one. The information describing the business was never built to survive the founder’s departure. It lived in their head, in their habits, in the way they interpreted the numbers. When someone else tries to read it, the machine does not hold together.",
+          "I will leave you to guess which of those businesses sold for millions. And which eventually ended up in the hands of the insolvency practitioner."
+        ]
+      },
+      {
+        "heading": "Sources",
+        "body": [
+          "[SRC-01] Financial Reporting Council (2024). Thematic Review: Reporting by the UK’s Largest Private Companies. FRC Corporate Reporting Review.",
+          "[SRC-02] Gartner (2020). Data Quality Research. Estimated average annual cost of poor data quality: $12.9 million per organisation.",
+          "[SRC-03] Bain & Company (2020). Due Diligence: Evolving Approaches Boost the Odds of Success. Global Corporate M&A Report 2020, Section 4.",
+          "[SRC-04] Corporate Finance Institute. Quality of Earnings Report: Definition, Importance. Overview of QoE methodology in private acquisition due diligence.",
+          "[SRC-05] RSM US LLP. Data Diligence as the Success Factor in Private Equity Investments. Analysis of data quality challenges in middle-market portfolio companies.",
+          "[SRC-06] OECD (2018). Business Transfers as an Engine for SME Growth. OECD SME and Entrepreneurship Policy Note.",
+          "[SRC-07] PricewaterhouseCoopers (2023). US Family Business Survey. Nearly two thirds of family businesses lack a documented and communicated succession plan.",
+          "[SRC-08] International Federation of Accountants (2019). Encouraging Successful Exit Strategies: Passing the Baton. IFAC SMP Committee analysis of SME succession failure risk."
+        ]
+      }
+    ]
   }
 ]
