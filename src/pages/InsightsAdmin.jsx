@@ -16,7 +16,7 @@ function buildSlug(chapterText) {
   return chapterText.toLowerCase().replace(/\s+/g, '-');
 }
 
-const emptySection = () => ({ heading: '', body: [''] });
+const emptySection = () => ({ heading: '', body: '' });
 
 const initialForm = () => {
   const nextNum = ARTICLES.length + 1;
@@ -73,33 +73,9 @@ export default function InsightsAdmin() {
     });
   }
 
-  function setSectionParagraph(sIdx, pIdx, value) {
+  function setSectionBody(idx, value) {
     setForm(f => {
-      const sections = f.sections.map((s, i) => {
-        if (i !== sIdx) return s;
-        const body = s.body.map((p, j) => j === pIdx ? value : p);
-        return { ...s, body };
-      });
-      return { ...f, sections };
-    });
-  }
-
-  function addParagraph(sIdx) {
-    setForm(f => {
-      const sections = f.sections.map((s, i) => {
-        if (i !== sIdx) return s;
-        return { ...s, body: [...s.body, ''] };
-      });
-      return { ...f, sections };
-    });
-  }
-
-  function removeParagraph(sIdx, pIdx) {
-    setForm(f => {
-      const sections = f.sections.map((s, i) => {
-        if (i !== sIdx) return s;
-        return { ...s, body: s.body.filter((_, j) => j !== pIdx) };
-      });
+      const sections = f.sections.map((s, i) => i === idx ? { ...s, body: value } : s);
       return { ...f, sections };
     });
   }
@@ -127,7 +103,7 @@ export default function InsightsAdmin() {
       excerpt: form.excerpt.trim(),
       sections: form.sections.map(s => ({
         heading: s.heading.trim() || null,
-        body: s.body.map(p => p.trim()).filter(Boolean),
+        body: s.body.split(/\n\n+/).map(p => p.trim()).filter(Boolean),
       })).filter(s => s.body.length > 0),
     };
   }
@@ -141,7 +117,7 @@ export default function InsightsAdmin() {
     if (!form.heroSrc.trim()) errors.push('Hero image URL is required');
     if (!form.heroAlt.trim()) errors.push('Hero image alt is required');
     if (!form.excerpt.trim()) errors.push('Excerpt is required');
-    const validSections = form.sections.filter(s => s.body.some(p => p.trim()));
+    const validSections = form.sections.filter(s => s.body.trim());
     if (validSections.length === 0) errors.push('At least one section with content is required');
     return errors;
   }
@@ -387,38 +363,14 @@ export default function InsightsAdmin() {
                     placeholder="Section heading (leave blank for no heading)"
                   />
 
-                  {/* Paragraphs */}
-                  <div className="space-y-2">
-                    {section.body.map((para, pIdx) => (
-                      <div key={pIdx} className="flex gap-2">
-                        <textarea
-                          value={para}
-                          onChange={e => setSectionParagraph(sIdx, pIdx, e.target.value)}
-                          rows={3}
-                          className="flex-1 bg-white/10 border border-white/20 text-white rounded px-4 py-2 text-sm focus:outline-none focus:border-teal resize-y"
-                          placeholder="Paragraph text"
-                        />
-                        {section.body.length > 1 && (
-                          <button
-                            type="button"
-                            onClick={() => removeParagraph(sIdx, pIdx)}
-                            className="text-white/30 hover:text-red-400 transition-colors self-start mt-2 text-lg leading-none"
-                            title="Remove paragraph"
-                          >
-                            ×
-                          </button>
-                        )}
-                      </div>
-                    ))}
-                  </div>
-
-                  <button
-                    type="button"
-                    onClick={() => addParagraph(sIdx)}
-                    className="text-sm text-teal hover:text-teal/80 transition-colors"
-                  >
-                    + Add paragraph
-                  </button>
+                  {/* Body — paste full section, blank lines = paragraph breaks */}
+                  <textarea
+                    value={section.body}
+                    onChange={e => setSectionBody(sIdx, e.target.value)}
+                    rows={8}
+                    className="w-full bg-white/10 border border-white/20 text-white rounded px-4 py-2 text-sm focus:outline-none focus:border-teal resize-y"
+                    placeholder={"Paste section text here.\n\nSeparate paragraphs with a blank line."}
+                  />
                 </div>
               ))}
             </div>
