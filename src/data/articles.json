@@ -369,5 +369,93 @@
         ]
       }
     ]
+  },
+  {
+    "slug": "chapter-7",
+    "chapter": "Chapter 7",
+    "title": "Revenue That Can Walk Away",
+    "date": "March 2026",
+    "lens": null,
+    "substackUrl": "https://theunemployableadvisor.substack.com/publish/post/188916938",
+    "heroImage": {
+      "src": "https://substackcdn.com/image/fetch/$s_!UgNX!,f_auto,q_auto:good,fl_progressive:steep/https%3A%2F%2Fsubstack-post-media.s3.amazonaws.com%2Fpublic%2Fimages%2F73f630c7-0c6a-4262-96b5-8ce581883ff2_1376x768.heic",
+      "alt": "Why concentration risk is priced before growth is rewarded"
+    },
+    "excerpt": "I invested in a fashion start-up in 2007.\n\nWe supplied dresses to two well-known UK retailers. The model was operationally elegant. Raw silk shipped from China to Italy for printing, then made up in the UK. Design here. Manufacture there. Distribution into premium retail.\n\nThen 2008 arrived.",
+    "sections": [
+      {
+        "heading": null,
+        "body": [
+          "I invested in a fashion start-up in 2007.",
+          "We supplied dresses to two well-known UK retailers. The model was operationally elegant. Raw silk shipped from China to Italy for printing, then made up in the UK. Design here. Manufacture there. Distribution into premium retail.",
+          "Then 2008 arrived.",
+          "Within months, both anchor customers disappeared. Not tapered. Not renegotiated. Gone.",
+          "We had inventory in transit across three jurisdictions and no purchase orders waiting at the end of it. Cashflow collapsed almost immediately. The board took advice. Insolvency followed.",
+          "It did not feel gradual. It felt like structural failure exposed by a single event.",
+          "The business had not failed because of product. It failed because revenue concentration had masked fragility. Two purchasing decisions, made in two boardrooms we did not sit in, erased the revenue base in a single cycle.",
+          "The numbers had been accurate. They had not been interrogated for exposure."
+        ]
+      },
+      {
+        "heading": "Numbers Are Not Exposure",
+        "body": [
+          "Most owner-managed businesses produce management accounts. Few use them to measure exposure.",
+          "Revenue can look healthy on paper while remaining structurally brittle. Top-line growth. Tidy debtor days. Margin within range. And yet one client delaying payment, one sector contracting, or one procurement decision changing can destabilise the entire enterprise. The spreadsheet becomes reassurance rather than diagnosis.",
+          "Revenue is not valuable because it exists. It is valuable because it is durable. In the fashion business, we had revenue. What we did not have was revenue that could survive the loss of either customer. The distinction between reported income and durable income is the distinction buyers are trained to identify. Most founders have never been asked to make it explicit.",
+          "In institutional lending, concentration risk triggers specific provisions. The Bank of England’s Pillar 2 framework requires banks to identify and quantify single-name and sectoral concentrations as part of their capital adequacy assessment [SRC-01]. The logic is elementary: correlated exposures amplify loss under stress. The principle does not change because the entity is smaller. It simply goes unmeasured."
+        ]
+      },
+      {
+        "heading": "Concentration Is a Capital Structure Issue",
+        "body": [
+          "Customer concentration is often described as a commercial issue. It is not. It is a capital structure issue.",
+          "When a single customer accounts for more than 10 to 15% of revenue, or the top five account for 25 to 35% or more, buyers do not see strong relationships. They see correlated risk. If revenue can walk with one decision-maker, cashflow is contingent. Contingent cashflow increases volatility. Volatility increases required return. Required return reduces enterprise value. This is not sentiment. It is risk pricing.",
+          "In the first half of 2025, the M&A advisory firm FOCUS Investment Banking reported withdrawing two separate manufacturing businesses from the market mid-process after each lost a major customer constituting over 50% of revenues. Neither case reflected poor performance. Both customers were financially stable S&P 500 companies. The impact on the sellers was described as catastrophic [SRC-02]. Academic research on customer concentration in M&A confirms the pattern empirically: a study published in the Journal of Corporate Finance found that higher target customer concentration leads to significantly lower acquirer stock returns and worse long-run operating performance post-acquisition [SRC-03].",
+          "The mechanism compounds when concentration intersects with contractual fragility. If the top customer can terminate on 90 days’ notice, the revenue is not recurring. It is rolling. Rolling revenue on short notice periods reprices as optional income, not institutional earnings. Buyers model the downside because they have seen it materialise. I have seen it materialise."
+        ]
+      },
+      {
+        "heading": "Shock Capacity",
+        "body": [
+          "The Insolvency Service reported that one in 190 companies on the Companies House effective register entered insolvency during 2025, a rate of 52.5 per 10,000 companies [SRC-04]. That rate has held broadly steady since 2024 and remains elevated above pre-pandemic levels, though well below the 113.1 per 10,000 peak during the 2008-09 recession. Monthly insolvency numbers in 2025 were slightly higher than 2024 and close to the 30-year high reached in 2023.",
+          "In cyclical environments, concentration risk compounds.",
+          "Buyers are not paying for headline EBITDA alone. They are assessing shock capacity. Shock capacity is the ability of a business to absorb the loss of a top customer, a sector downturn, payment term elongation, margin renegotiation or working capital strain without triggering emergency cost cutting, covenant renegotiation or shareholder funding.",
+          "If the loss of one account forces any of those responses, the business lacks shock capacity. Buyers assume that weakness will reappear post-acquisition. The Bank of England’s July 2025 Financial Stability Report noted that while insolvency rates remain below long-term averages, SMEs are generally under more pressure than larger corporates, with arrears rising slightly in 2024 [SRC-05]. Insolvencies continue to be driven by very small firms. The structural fragility is concentrated precisely where concentration risk is most prevalent."
+        ]
+      },
+      {
+        "heading": "Forecasts vs Wishes",
+        "body": [
+          "Forecasts that assume “same again” from the top three accounts are not forecasts. They are wishes.",
+          "Concentration risk is where financial complacency first reveals itself. If downside scenarios are not being modelled, if customer profitability is not segmented, if contract termination rights are not heat-mapped, the business is operating on optimism.",
+          "During diligence, this becomes visible quickly. Buyers request customer-level profitability, contract durability analysis, sector segmentation, sensitivity models and renewal history. If those do not exist, valuation shifts to protection mode. Earn-outs. Escrow. Retention structures. Not because buyers are aggressive but because durability has not been proved.",
+          "Revenue concentration also affects debt capacity. The British Business Bank’s Growth Guarantee Scheme, which provides lenders with a 70% government-backed guarantee on eligible facilities of up to £2 million, was extended in April 2025 with approximately £500 million of additional lending capacity partly in response to tariff-related cashflow disruption [SRC-06]. The scheme exists because lenders need risk mitigation to serve the SME market. Concentrated revenue books make that risk mitigation harder to justify. A logo is not collateral. Diversification is.",
+          "When lenders apply stress tests to projected cashflows, correlated customer risk produces lower sustainable leverage. Lower leverage reduces total transaction value. This is how concentration silently compresses exit outcomes before any buyer conversation begins."
+        ]
+      },
+      {
+        "heading": "Revenue That Survives",
+        "body": [
+          "In the fashion business, we believed product strength would protect us. It did not.",
+          "Cash is not a slogan. It is the mechanism that decides whether you stay in the game when one customer withdraws. Used properly, management accounts should force awkward actions while you still have optionality. Deliberately capping a dominant customer and replacing them with a portfolio of mid-sized accounts may slow short-term growth. It often increases valuation multiple by reducing volatility.",
+          "The Owner Awareness Week survey, conducted by ThinCats and the Employee Ownership Association, found that nearly one fifth of UK SME owners planning to divest expected to do so through closure or liquidation, representing an estimated 32,000 businesses that might otherwise have survived under different ownership [SRC-07]. Many of those businesses will enter the market carrying the same structural exposure we carried in 2007: revenue that looked solid until the moment it was tested.",
+          "Concentration is not visible until it crystallises. By the time it does, the price is already adjusted. Owners see effort and potential. Buyers see transferability and durability. Revenue that can walk away with one purchasing decision is not revenue in any institutional sense.",
+          "It is optional income.",
+          "Markets do not pay institutional multiples for optional income."
+        ]
+      },
+      {
+        "heading": "Sources",
+        "body": [
+          "[SRC-01] Bank of England, Prudential Regulation Authority. FSA078: Pillar 2 Concentration Risk Minimum Data Requirements.",
+          "[SRC-02] FOCUS Investment Banking (2025). “The Perils of Customer Concentration in M&A.” July 2025.",
+          "[SRC-03] Huang, R. et al. (2021). “Customer Concentration and M&A Performance.” Journal of Corporate Finance, Vol. 69.",
+          "[SRC-04] The Insolvency Service (2026). Company Insolvency Statistics, December 2025. 52.5 per 10,000 companies entered insolvency in 2025.",
+          "[SRC-05] Bank of England (2025). Financial Stability Report, July 2025.",
+          "[SRC-06] British Business Bank (2025). Growth Guarantee Scheme. 70% government-backed guarantee on facilities up to £2 million; additional £500m capacity announced April 2025.",
+          "[SRC-07] ThinCats / Employee Ownership Association (2024). Owner Awareness Week Survey: Business Succession and Employee Ownership."
+        ]
+      }
+    ]
   }
 ]
