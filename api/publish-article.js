@@ -1,4 +1,4 @@
-const https = require('https');
+import https from 'https';
 
 function githubRequest(options, body) {
   return new Promise((resolve, reject) => {
@@ -19,7 +19,7 @@ function githubRequest(options, body) {
   });
 }
 
-module.exports = async function handler(req, res) {
+export default async function handler(req, res) {
   res.setHeader('Access-Control-Allow-Origin', '*');
   res.setHeader('Access-Control-Allow-Methods', 'POST, OPTIONS');
   res.setHeader('Access-Control-Allow-Headers', 'Content-Type');
@@ -33,7 +33,6 @@ module.exports = async function handler(req, res) {
   }
 
   try {
-    // Parse body — Vercel auto-parses JSON, but guard against string body
     let body = req.body;
     if (typeof body === 'string') {
       try { body = JSON.parse(body); } catch (e) { body = {}; }
@@ -62,7 +61,6 @@ module.exports = async function handler(req, res) {
     const filePath = 'src/data/articles.json';
     const authHeader = `Bearer ${token}`;
 
-    // GET current file (content + SHA)
     const getOptions = {
       hostname: 'api.github.com',
       path: `/repos/${owner}/${repo}/contents/${filePath}`,
@@ -98,12 +96,6 @@ module.exports = async function handler(req, res) {
     const chapterNum = articles.length;
     const commitMessage = `Add Chapter ${chapterNum}: ${article.title}`;
 
-    const putBody = {
-      message: commitMessage,
-      content: encodedContent,
-      sha: sha,
-    };
-
     const putOptions = {
       hostname: 'api.github.com',
       path: `/repos/${owner}/${repo}/contents/${filePath}`,
@@ -116,7 +108,7 @@ module.exports = async function handler(req, res) {
       },
     };
 
-    const putResult = await githubRequest(putOptions, putBody);
+    const putResult = await githubRequest(putOptions, { message: commitMessage, content: encodedContent, sha });
 
     if (putResult.status !== 200 && putResult.status !== 201) {
       return res.status(500).json({ error: 'GitHub PUT failed', status: putResult.status, detail: putResult.body });
@@ -127,4 +119,4 @@ module.exports = async function handler(req, res) {
   } catch (err) {
     return res.status(500).json({ error: 'Unexpected server error', detail: err.message });
   }
-};
+}
