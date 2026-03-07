@@ -7,11 +7,28 @@ import SEOHelmet from '../components/SEOHelmet'
 import BreadcrumbNavigation from '../components/BreadcrumbNavigation'
 import { ARTICLES } from '../data/articles'
 
+const MONTH_ORDER = {
+  January: 1, February: 2, March: 3, April: 4,
+  May: 5, June: 6, July: 7, August: 8,
+  September: 9, October: 10, November: 11, December: 12,
+}
+
+function parseDateStr(dateStr) {
+  const [month, year] = dateStr.split(' ')
+  return parseInt(year) * 100 + (MONTH_ORDER[month] || 0)
+}
+
 const Insights = () => {
   const breadcrumbs = [{ label: 'Insights', url: null }]
 
-  // Most recent first
-  const sorted = [...ARTICLES].reverse()
+  // Most recent first — sorted explicitly by date, then chapter number descending
+  const sorted = [...ARTICLES].sort((a, b) => {
+    const dateDiff = parseDateStr(b.date) - parseDateStr(a.date)
+    if (dateDiff !== 0) return dateDiff
+    const chapterA = parseInt(a.slug.replace('chapter-', '')) || 0
+    const chapterB = parseInt(b.slug.replace('chapter-', '')) || 0
+    return chapterB - chapterA
+  })
   const [featured, ...rest] = sorted
 
   useEffect(() => {
@@ -40,8 +57,7 @@ const Insights = () => {
             Insights
           </h1>
           <p className="text-gray-400 text-lg max-w-2xl leading-relaxed">
-            Long-form writing on the structural risks that determine what a buyer will pay —
-            and what founders can do about them before a process starts.
+            Long-form writing on transferability, structural risk, and the issues buyers price before a process begins.
           </p>
           <p className="text-sm text-gray-500 mt-4">
             Published on{' '}
@@ -176,17 +192,25 @@ const Insights = () => {
       <section className="border-t border-white/10 py-12 px-4 sm:px-6 lg:px-8">
         <div className="max-w-6xl mx-auto">
           <p className="text-gray-500 text-sm leading-relaxed max-w-xl">
-            These articles are the intellectual foundation behind the Saleability Diagnostic.
-            If the framework resonates, the diagnostic applies it directly to your business.
+            These articles sit behind the Saleability Diagnostic. The writing explains the framework. The diagnostic applies it directly to your business.
           </p>
-          <a
-            href="https://theunemployableadvisor.substack.com"
-            target="_blank"
-            rel="noopener noreferrer"
-            className="inline-flex items-center gap-2 text-teal text-sm font-semibold mt-4 hover:underline"
-          >
-            Follow The Unemployable Advisor on Substack <ArrowRight size={14} />
-          </a>
+          <div className="flex flex-col sm:flex-row sm:items-center gap-4 mt-4">
+            <a
+              href="https://theunemployableadvisor.substack.com"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="inline-flex items-center gap-2 text-teal text-sm font-semibold hover:underline"
+            >
+              Follow The Unemployable Advisor on Substack <ArrowRight size={14} />
+            </a>
+            <span className="hidden sm:block text-gray-600 text-sm">·</span>
+            <Link
+              to="/diagnostic"
+              className="inline-flex items-center gap-2 text-teal text-sm font-semibold hover:underline"
+            >
+              See the diagnostic <ArrowRight size={14} />
+            </Link>
+          </div>
         </div>
       </section>
     </div>
