@@ -99,7 +99,7 @@ const Home = () => {
             </div>
 
             <p className="mt-6 text-gray-400 text-sm max-w-xl mx-auto leading-relaxed">
-              Most founders start with a conversation. The point is to understand where buyers would press, and whether the diagnostic is the right next step.
+              What matters is not how the founder sees the business, but how a buyer would price the risk inside it.
             </p>
           </motion.div>
 
@@ -213,39 +213,7 @@ const Home = () => {
         </div>
       </section>
 
-      {/* Section 4 — Owner Dependence Hook */}
-      <section className="py-24 bg-teal">
-        <div className="max-w-3xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
-          <motion.div
-            initial="initial"
-            whileInView="animate"
-            viewport={{ once: true }}
-            variants={fadeInUp}
-          >
-            <h2 className="text-3xl md:text-4xl font-bold text-white mb-6">
-              Not ready to commit? Start with the free score.
-            </h2>
-            <p className="text-white/90 text-lg mb-8 leading-relaxed">
-              Owner Dependence is the most common regime-determining constraint. The free diagnostic takes 8 minutes and tells you where the constraint sits in your business.
-            </p>
-            <a
-              href="https://app.norivane.com/free"
-              target="_blank"
-              rel="noopener noreferrer"
-              onClick={() => trackScoreToolClick('home_cta_section')}
-              className="inline-flex items-center gap-2 bg-white text-teal px-8 py-4 rounded-full font-semibold text-lg hover:bg-gray-50 transition-all duration-300 shadow-xl"
-            >
-              <span>Check Your Owner Dependence Score — Free</span>
-              <ArrowRight size={20} />
-            </a>
-            <p className="text-white/60 text-sm mt-4">
-              No payment. Takes 8 minutes.
-            </p>
-          </motion.div>
-        </div>
-      </section>
-
-      {/* Section 5 — Product Ladder */}
+      {/* Section 4 — Product Ladder */}
       <section id="how-it-works" className="py-24 bg-gray-50">
         <div className="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8">
           <motion.div
@@ -336,6 +304,38 @@ const Home = () => {
               </a>
             </motion.div>
           </div>
+        </div>
+      </section>
+
+      {/* Section 5 — Owner Dependence Hook */}
+      <section className="py-24 bg-teal">
+        <div className="max-w-3xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+          <motion.div
+            initial="initial"
+            whileInView="animate"
+            viewport={{ once: true }}
+            variants={fadeInUp}
+          >
+            <h2 className="text-3xl md:text-4xl font-bold text-white mb-6">
+              Want an initial view first? Start with the free score.
+            </h2>
+            <p className="text-white/90 text-lg mb-8 leading-relaxed">
+              Owner Dependence is the most common regime-determining constraint. The free diagnostic takes 8 minutes and tells you where the constraint sits in your business.
+            </p>
+            <a
+              href="https://app.norivane.com/free"
+              target="_blank"
+              rel="noopener noreferrer"
+              onClick={() => trackScoreToolClick('home_cta_section')}
+              className="inline-flex items-center gap-2 bg-white text-teal px-8 py-4 rounded-full font-semibold text-lg hover:bg-gray-50 transition-all duration-300 shadow-xl"
+            >
+              <span>Check Your Owner Dependence Score — Free</span>
+              <ArrowRight size={20} />
+            </a>
+            <p className="text-white/60 text-sm mt-4">
+              No payment. Takes 8 minutes.
+            </p>
+          </motion.div>
         </div>
       </section>
 
