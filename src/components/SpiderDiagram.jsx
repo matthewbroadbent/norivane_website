@@ -37,6 +37,13 @@ const AXES = [
     buyerPrices: 'Whether operational data, customer records, contracts and processes are documented, retrievable and auditable.',
     riskNote: 'Poor systems create due diligence drag and raise questions about scalability — a proxy for how professionally the business is run.',
   },
+  {
+    key: 'proprietary',
+    label: 'Proprietary\nAdvantage',
+    score: 55,
+    buyerPrices: 'What the business owns, controls or knows that competitors cannot easily replicate — and whether that advantage belongs to the company rather than the founder.',
+    riskNote: 'Where advantage sits primarily in personal relationships or individual expertise, buyers apply valuation pressure. Institutionalised advantage strengthens the deal.',
+  },
 ]
 
 // Geometry constants
@@ -67,13 +74,14 @@ function polygon(scores) {
 }
 
 // Per-axis CSS transform to anchor the label correctly around its position point
-// 0 = top-centre, 1 = upper-right, 2 = lower-right, 3 = lower-left, 4 = upper-left
+// Hexagon: 0 = top, 1 = upper-right, 2 = lower-right, 3 = bottom, 4 = lower-left, 5 = upper-left
 const LABEL_ALIGN = [
   { textAlign: 'center',  transform: 'translate(-50%, -100%)' },  // 0 top
   { textAlign: 'left',    transform: 'translate(0,    -50%)'  },  // 1 upper-right
   { textAlign: 'left',    transform: 'translate(0,     0)'    },  // 2 lower-right
-  { textAlign: 'right',   transform: 'translate(-100%, 0)'    },  // 3 lower-left
-  { textAlign: 'right',   transform: 'translate(-100%, -50%)' },  // 4 upper-left
+  { textAlign: 'center',  transform: 'translate(-50%, 0)'     },  // 3 bottom
+  { textAlign: 'right',   transform: 'translate(-100%, 0)'    },  // 4 lower-left
+  { textAlign: 'right',   transform: 'translate(-100%, -50%)' },  // 5 upper-left
 ]
 
 const SpiderDiagram = () => {
@@ -262,7 +270,7 @@ const SpiderDiagram = () => {
               transition={{ duration: 0.2 }}
             >
               <p className="text-gray-400 text-sm leading-relaxed mb-3">
-                The five lenses represent what a professional buyer analyses when pricing a transaction.
+                The six structural lenses represent what a professional buyer analyses when pricing a transaction.
               </p>
               <p className="text-gray-400 text-sm leading-relaxed mb-6">
                 Click any label or dot to see what a buyer prices in that dimension and what a weak score means for your deal.

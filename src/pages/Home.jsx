@@ -11,7 +11,7 @@ import { trackScoreToolClick } from '../utils/analytics'
 const HOME_FAQS = [
   {
     question: 'What is the Saleability Diagnostic?',
-    answer: 'A structured assessment of your business across five dimensions that determine what a buyer sees when they look at it. It does not tell you what your business is worth. It tells you where a buyer would apply a discount, demand a protection, or walk away — before they do.',
+    answer: 'A structured assessment of your business across six dimensions that determine what a buyer sees when they look at it. It does not tell you what your business is worth. It tells you where a buyer would apply a discount, demand a protection, or walk away — before they do.',
   },
   {
     question: 'Who is this for?',
@@ -82,22 +82,25 @@ const Home = () => {
 
             <div className="flex flex-col sm:flex-row gap-4 justify-center items-center">
               <a
-                href="https://app.norivane.com/free"
+                href="https://calendly.com/matthew-norivane/mb-30-minutes"
                 target="_blank"
                 rel="noopener noreferrer"
-                onClick={() => trackScoreToolClick('home_hero')}
                 className="bg-teal hover:bg-teal/90 text-white px-8 py-4 rounded-full font-semibold text-lg transition-all duration-300 shadow-xl hover:shadow-2xl"
               >
-                Check Your Owner Dependence Score — Free
+                Book a 30-minute call
               </a>
 
               <Link
-                to="/exit-architecture"
+                to="/diagnostic"
                 className="text-white hover:text-teal border-b border-white/30 hover:border-teal pb-0.5 font-medium text-lg transition-all duration-300"
               >
-                What is Exit Strategy Architecture?
+                Compare diagnostic options
               </Link>
             </div>
+
+            <p className="mt-6 text-gray-400 text-sm max-w-xl mx-auto leading-relaxed">
+              Most founders start with a conversation. The point is to understand where buyers would press, and whether the diagnostic is the right next step.
+            </p>
           </motion.div>
 
           <motion.div
@@ -107,6 +110,45 @@ const Home = () => {
             className="absolute bottom-8 left-1/2 -translate-x-1/2"
           >
             <ChevronDown size={28} className="animate-bounce text-white/40" />
+          </motion.div>
+        </div>
+      </section>
+
+      {/* Section 1b — Advisory Proof Strip */}
+      <section className="py-16 bg-white border-b border-gray-100">
+        <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
+          <motion.div
+            initial="initial"
+            whileInView="animate"
+            viewport={{ once: true }}
+            variants={fadeInUp}
+          >
+            <p className="text-xs font-semibold uppercase tracking-widest text-teal mb-8 text-center">
+              What founders hear in the first 30 minutes
+            </p>
+            <div className="space-y-6">
+              {[
+                {
+                  quote: 'The value is not in the app. It is whether the app owns the path from introduction to outcome.',
+                  attribution: 'Founder, March 2026',
+                },
+                {
+                  quote: 'Exit in three to five years requires squeaky clean in 24 months.',
+                  attribution: 'Founder, March 2026',
+                },
+                {
+                  quote: 'If your verification stops at email validation, your trust layer is still thin.',
+                  attribution: 'Founder, March 2026',
+                },
+              ].map((item) => (
+                <div key={item.attribution + item.quote.slice(0, 20)} className="border-l-2 border-teal/30 pl-5">
+                  <p className="text-dark-grey text-base leading-relaxed">
+                    &ldquo;{item.quote}&rdquo;
+                  </p>
+                  <p className="text-xs text-medium-grey mt-2 font-medium">{item.attribution}</p>
+                </div>
+              ))}
+            </div>
           </motion.div>
         </div>
       </section>
@@ -130,7 +172,7 @@ const Home = () => {
         </div>
       </section>
 
-      {/* Section 3 — The Five Lenses */}
+      {/* Section 3 — The Six Lenses */}
       <section className="py-24 bg-dark-blue">
         <div className="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8">
           <motion.div
@@ -141,7 +183,7 @@ const Home = () => {
             className="text-center mb-14"
           >
             <h2 className="text-3xl md:text-4xl font-bold text-white mb-4">
-              What buyers actually price
+              Six structural lenses buyers use to price a business
             </h2>
           </motion.div>
 
@@ -154,15 +196,20 @@ const Home = () => {
             <SpiderDiagram />
           </motion.div>
 
-          <motion.p
+          <motion.div
             initial="initial"
             whileInView="animate"
             viewport={{ once: true }}
             variants={fadeInUp}
-            className="text-center text-gray-400 text-sm mt-10 max-w-xl mx-auto"
+            className="mt-10 max-w-2xl mx-auto space-y-3 text-center"
           >
-            The lowest lens score determines the regime. One weak dimension can collapse the whole picture.
-          </motion.p>
+            <p className="text-gray-400 text-sm">
+              The lowest lens score determines the regime. One weak dimension can collapse the whole picture.
+            </p>
+            <p className="text-gray-500 text-sm">
+              The sixth lens — Proprietary Advantage — tests what the business actually owns, controls or knows that competitors cannot easily replicate. It was introduced to address a gap: many businesses carry hidden structural defensibility that was not being assessed.
+            </p>
+          </motion.div>
         </div>
       </section>
 
@@ -176,11 +223,10 @@ const Home = () => {
             variants={fadeInUp}
           >
             <h2 className="text-3xl md:text-4xl font-bold text-white mb-6">
-              Start here. It takes 8 minutes.
+              Not ready to commit? Start with the free score.
             </h2>
             <p className="text-white/90 text-lg mb-8 leading-relaxed">
-              Owner Dependence is the most common regime-determining constraint.
-              Answer the free diagnostic. Get your score. Understand what a buyer sees.
+              Owner Dependence is the most common regime-determining constraint. The free diagnostic takes 8 minutes and tells you where the constraint sits in your business.
             </p>
             <a
               href="https://app.norivane.com/free"
@@ -193,7 +239,7 @@ const Home = () => {
               <ArrowRight size={20} />
             </a>
             <p className="text-white/60 text-sm mt-4">
-              Name and email required. No payment. Takes 8 minutes.
+              No payment. Takes 8 minutes.
             </p>
           </motion.div>
         </div>
@@ -210,7 +256,7 @@ const Home = () => {
             className="text-center mb-14"
           >
             <h2 className="text-3xl md:text-4xl font-bold text-dark-blue mb-4">
-              How the diagnostic works
+              The diagnostic options
             </h2>
           </motion.div>
 
@@ -229,7 +275,7 @@ const Home = () => {
               </div>
               <h3 className="text-xl font-bold text-white mb-3">Diagnostic + Private Briefing</h3>
               <p className="text-gray-300 text-sm leading-relaxed mb-6 flex-1">
-                All five lenses. A written report. Plus a 90-minute private briefing with Matthew — contextual
+                All six lenses. A written report. Plus a 90-minute private briefing with Matthew — contextual
                 analysis of your specific situation and a clear action pathway. Already have the Diagnostic?
                 Upgrade within 30 days for £2,000 + VAT.
               </p>
@@ -254,7 +300,7 @@ const Home = () => {
               <div className="text-sm font-semibold text-teal uppercase tracking-wider mb-3">£497 + VAT</div>
               <h3 className="text-xl font-bold text-dark-blue mb-3">Saleability Diagnostic</h3>
               <p className="text-medium-grey text-sm leading-relaxed mb-6 flex-1">
-                All five lenses. A written report. Your regime classification. A prioritised roadmap of
+                All six lenses. A written report. Your regime classification. A prioritised roadmap of
                 what to address — and in what order — before a transaction.
               </p>
               <Link
@@ -337,8 +383,17 @@ const Home = () => {
               </Link>
               <p className="text-dark-grey">
                 If this is the lens you want applied to your business,{' '}
+                <a
+                  href="https://calendly.com/matthew-norivane/mb-30-minutes"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="text-teal font-semibold hover:underline"
+                >
+                  book a 30-minute call
+                </a>
+                {' '}or{' '}
                 <Link to="/diagnostic" className="text-teal font-semibold hover:underline">
-                  start with the Diagnostic
+                  explore the diagnostic options
                 </Link>
                 .
               </p>
@@ -395,27 +450,30 @@ const Home = () => {
             viewport={{ once: true }}
             variants={fadeInUp}
           >
-            <h2 className="text-3xl md:text-4xl font-bold text-white mb-10">
+            <h2 className="text-3xl md:text-4xl font-bold text-white mb-6">
               Ready to see what a buyer sees?
             </h2>
 
-            <div className="flex flex-col sm:flex-row gap-4 justify-center items-center">
-              <Link
-                to="/diagnostic"
-                className="bg-teal hover:bg-teal/90 text-white px-8 py-4 rounded-full font-semibold text-lg transition-all duration-300 shadow-xl"
-              >
-                Go to the Diagnostic
-              </Link>
+            <p className="text-gray-400 text-base mb-10 max-w-lg mx-auto leading-relaxed">
+              Most founders start with a conversation. The diagnostic is the right next step for those who want a structured, written assessment.
+            </p>
 
+            <div className="flex flex-col sm:flex-row gap-4 justify-center items-center">
               <a
-                href="https://app.norivane.com/free"
+                href="https://calendly.com/matthew-norivane/mb-30-minutes"
                 target="_blank"
                 rel="noopener noreferrer"
-                onClick={() => trackScoreToolClick('home_final_cta')}
+                className="bg-teal hover:bg-teal/90 text-white px-8 py-4 rounded-full font-semibold text-lg transition-all duration-300 shadow-xl"
+              >
+                Book a 30-minute call
+              </a>
+
+              <Link
+                to="/diagnostic"
                 className="text-white hover:text-teal border-b border-white/30 hover:border-teal pb-0.5 font-medium text-lg transition-all duration-300"
               >
-                Or check your Owner Dependence Score free first →
-              </a>
+                See diagnostic options
+              </Link>
             </div>
           </motion.div>
         </div>
