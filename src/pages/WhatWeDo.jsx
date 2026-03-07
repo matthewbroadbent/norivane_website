@@ -18,9 +18,9 @@ const WhatWeDo = () => {
   return (
     <div className="min-h-screen">
       <SEOHelmet
-        title="What We Do | Exit Strategy Architecture | Norivane"
-        description="Norivane builds exit readiness into businesses years before a transaction. Structural analysis from a buyer's perspective — not financial projection, not cosmetic improvement."
-        keywords="exit strategy architecture, business sale preparation, structural optionality, UK SME, exit readiness"
+        title="What We Do | Norivane"
+        description="Norivane helps founders build businesses that can withstand buyer scrutiny before a transaction is on the table. Structural analysis from a buyer's perspective, not financial projection or cosmetic improvement."
+        keywords="what we do, exit architecture, business sale preparation, structural optionality, UK SME, exit readiness"
         canonicalUrl="/what-we-do"
       />
 
@@ -41,9 +41,10 @@ const WhatWeDo = () => {
               Exit Architecture for founders who want options before they need them.
             </p>
             <p className="text-xl text-gray-300 leading-relaxed max-w-3xl">
-              Most owners start thinking seriously about sale only when they are ready to sell.
-              By then, much of the structural work that protects value and improves buyer
-              confidence is harder, slower and more visible than it should have been.
+              Most owners start thinking seriously about sale only when they are ready
+              to sell. By then, much of the structural work that protects value and
+              improves buyer confidence is harder, slower and more visible than it
+              should have been.
             </p>
           </motion.div>
         </div>
@@ -61,22 +62,23 @@ const WhatWeDo = () => {
           >
             <h2 className="text-3xl font-bold text-dark-blue mb-8">What it is</h2>
             <p>
-              Norivane helps founders build a business that could withstand buyer scrutiny
-              before a transaction is on the table.
+              Norivane helps founders build a business that could withstand buyer
+              scrutiny before a transaction is on the table.
             </p>
             <p>
-              That means genuine structural optionality — a business that could be sold on
-              acceptable terms, stepped back from, or partially exited without forcing the
-              outcome or accepting the terms that come with urgency.
+              That means genuine structural optionality: a business that could be
+              sold on acceptable terms, stepped back from, or partially exited
+              without forcing the outcome or accepting the terms that come with urgency.
             </p>
             <p>
-              It is not financial projection. It is not cosmetic improvement. It is not a pitch
-              deck built around a target multiple.
+              It is not financial projection. It is not cosmetic improvement. It is
+              not a pitch deck built around a target multiple.
             </p>
             <p>
-              It is a buyer-perspective assessment of the structural risks embedded in your
-              business — the dependencies, concentrations, information gaps and transition
-              uncertainties that a professional buyer will find and price into any offer they make.
+              It is a buyer-perspective assessment of the structural risks embedded
+              in your business: the dependencies, concentrations, information gaps
+              and transition uncertainties that a professional buyer will find and
+              price into any offer they make.
             </p>
           </motion.div>
         </div>
@@ -94,22 +96,24 @@ const WhatWeDo = () => {
             <h2 className="text-3xl font-bold text-dark-blue mb-8">Why timing matters</h2>
             <div className="space-y-6 text-lg text-dark-grey leading-relaxed">
               <p>
-                Structural optionality must be built before it is needed. A business that becomes
-                saleable under pressure — when the founder is ready to leave, when a health event
-                forces the issue, when an approach arrives unexpectedly — will rarely achieve the
-                terms a well-prepared business commands.
+                Structural optionality must be built before it is needed. A business
+                that becomes saleable under pressure, when the founder is ready to
+                leave, when a health event forces the issue, or when an approach
+                arrives unexpectedly, will rarely achieve the terms a well-prepared
+                business commands.
               </p>
               <p>
-                The difference between a clean exit and a discounted one is almost always
-                structural. Owner dependence that creates key-person risk. Customer concentration
-                that creates revenue risk. Management gaps that create transition risk. Financial
-                presentation that creates scrutiny risk. Competitive advantage held personally by
-                the founder, rather than embedded in the company, that creates defensibility risk.
+                The difference between a clean exit and a discounted one is almost
+                always structural. Owner dependence creates key-person risk. Customer
+                concentration creates revenue risk. Management gaps create transition
+                risk. Financial presentation creates scrutiny risk. Competitive
+                advantage held personally by the founder, rather than embedded in the
+                company, creates defensibility risk.
               </p>
               <p>
-                None of these are resolved quickly. They require time, deliberate change, and
-                evidence that the change has held. That is why the work starts years before the
-                conversation about a transaction begins.
+                None of these are resolved quickly. They require time, deliberate
+                change, and evidence that the change has held. That is why the work
+                starts years before the conversation about a transaction begins.
               </p>
             </div>
           </motion.div>
@@ -128,24 +132,27 @@ const WhatWeDo = () => {
             <h2 className="text-3xl font-bold text-dark-blue mb-8">The methodology</h2>
             <div className="space-y-6 text-lg text-dark-grey leading-relaxed">
               <p>
-                The analysis works across six structural dimensions: Owner Dependence, Commercial
-                Concentration, Financial Scrutiny Readiness, Management Depth, Systems and Data
-                Integrity, and Proprietary Advantage.
+                The analysis works across six structural dimensions: Owner
+                Dependence, Commercial Concentration, Financial Scrutiny Readiness,
+                Management Depth, Systems and Data Integrity, and Proprietary
+                Advantage.
               </p>
               <p>
-                Proprietary Advantage is the lens that tests what is genuinely defensible in the
-                business — what it owns, controls or knows that competitors cannot easily replicate,
-                and whether that advantage belongs to the company or to the founder personally.
+                Proprietary Advantage is the lens that tests what is genuinely
+                defensible in the business: what it owns, controls or knows that
+                competitors cannot easily replicate, and whether that advantage
+                belongs to the company or to the founder personally.
               </p>
               <p>
-                Each dimension is assessed against the way a rational buyer would test it in
-                diligence, and what weakness in that dimension is likely to do to price, process
-                or deal terms.
+                Each dimension is assessed against the way a rational buyer would
+                test it in diligence, and what weakness in that dimension is likely
+                to do to price, process or deal terms.
               </p>
               <p>
-                The output is a regime classification: Strength, Stable, Constraint, or Risk. The
-                lowest-scoring dimension determines the regime. Improving average scores is not the
-                objective. Eliminating the constraint that limits the whole picture is.
+                The output is a regime classification: Strength, Stable, Constraint,
+                or Risk. The lowest-scoring dimension determines the regime.
+                Improving average scores is not the objective. Eliminating the
+                constraint that limits the business is.
               </p>
             </div>
           </motion.div>
@@ -166,14 +173,15 @@ const WhatWeDo = () => {
             </h2>
             <div className="space-y-6 text-lg text-dark-grey leading-relaxed">
               <p>
-                As a business approaches a transaction, the work shifts from improving the
-                structure to evidencing it. Buyers do not take assurances. They test documents,
-                ask questions, and form views on risk through the coherence of what they find.
+                As a business approaches a transaction, the work shifts from
+                improving the structure to evidencing it. Buyers do not take
+                assurances. They test documents, ask questions, and form views on
+                risk through the coherence of what they find.
               </p>
               <p>
-                For businesses entering that phase, we build a Business Oracle — a queryable
-                knowledge layer that transforms how buyers experience due diligence and reduces
-                the time, cost and uncertainty of a transaction.
+                For businesses entering that phase, we build a Business Oracle: a
+                queryable knowledge layer that improves the buyer&apos;s experience of
+                due diligence and reduces time, cost and uncertainty in the process.
               </p>
               <Link
                 to="/business-oracle"
@@ -199,8 +207,8 @@ const WhatWeDo = () => {
               Start with a conversation
             </h2>
             <p className="text-lg text-gray-300 leading-relaxed mb-10">
-              Most founders do not need more context first. They need to understand where buyers
-              would press, and what the right next step is.
+              Most founders do not need more context first. They need to understand
+              where buyers would press, and what the right next step is.
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center items-center">
               <a
